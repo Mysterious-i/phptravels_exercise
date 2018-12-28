@@ -4,10 +4,10 @@
 end-to-end tests using pytest,pytest-bdd, Selenium
 
 
-# Excercises: 
+# Exercises: 
 
 > 
-##  Excercise 1:
+##  Exercise 1:
 
 
 > Implement end-to-end tests against http://www.phptravels.net (a test website) using Python, pytest, pytest-bdd, Selenium, and the Gherkin language for feature files.
