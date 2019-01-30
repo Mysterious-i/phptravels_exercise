@@ -5996,3 +5996,534 @@ ElementNotInteractableException: Message: Element <a class="dropdown-toggle go-t
 2019-01-30 12:15:51,754 - (logged from test_search_hotels.py:alert_incomplete_data:169) - tests.conftest - WARNING - _actual alert text : Please fill out this field. -
 2019-01-30 12:15:51,754 - (logged from test_search_hotels.py:alert_incomplete_data:169) - tests.conftest - WARNING - _actual alert text : Please fill out this field. -
 2019-01-30 12:15:51,754 - (logged from test_search_hotels.py:alert_incomplete_data:169) - tests.conftest - WARNING - _actual alert text : Please fill out this field. -
+2019-01-30 12:49:56,631 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:50:05,021 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id e3fea9b6-64f4-744b-a024-907fa8c73219___ -
+2019-01-30 12:50:07,176 - (logged from test_login.py:login_page:35) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:07,188 - (logged from test_login.py:login_page:36) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:07,190 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "I input <email> and <password>"** -
+2019-01-30 12:50:07,265 - (logged from test_login.py:input_credts:148) - tests.conftest - INFO - Login authentication with email: user@phptravels.com  password: demouser -
+2019-01-30 12:50:07,412 - (logged from test_login.py:input_credts:152) - tests.conftest - DEBUG - <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e3fea9b6-64f4-744b-a024-907fa8c73219", element="5bc0321f-b379-2444-b331-69113539dc61")> elem -
+2019-01-30 12:50:07,528 - (logged from test_login.py:input_credts:160) - tests.conftest - INFO - Current time : Wed Jan 30 12:50:07 2019 -
+2019-01-30 12:50:10,533 - (logged from test_login.py:input_credts:162) - tests.conftest - INFO - we waited for 5 sec and now its : Wed Jan 30 12:50:10 2019 -
+2019-01-30 12:50:10,550 - (logged from test_login.py:input_credts:165) - tests.conftest - INFO - checking the url ...: https://www.phptravels.net/account/ -
+2019-01-30 12:50:10,554 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "I should be redirected to my "account_page""** -
+2019-01-30 12:50:10,560 - (logged from test_login.py:redirected_to_acc:206) - tests.conftest - INFO - ___current title My Account -
+2019-01-30 12:50:10,564 - (logged from test_login.py:redirected_to_acc:207) - tests.conftest - INFO - ___current url https://www.phptravels.net/account/ -
+2019-01-30 12:50:11,256 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "the phptravels Login page is displayed"** -
+2019-01-30 12:50:11,257 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:50:11,257 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:50:17,560 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 240b2bbf-74f2-bf41-a583-fed22f75e8bf___ -
+2019-01-30 12:50:17,560 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 240b2bbf-74f2-bf41-a583-fed22f75e8bf___ -
+2019-01-30 12:50:19,652 - (logged from test_login.py:login_page:35) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:19,652 - (logged from test_login.py:login_page:35) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:19,661 - (logged from test_login.py:login_page:36) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:19,661 - (logged from test_login.py:login_page:36) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:19,662 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am logged in"** -
+2019-01-30 12:50:19,662 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am logged in"** -
+2019-01-30 12:50:19,670 - (logged from test_login.py:logged_in:48) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:19,670 - (logged from test_login.py:logged_in:48) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:19,677 - (logged from test_login.py:logged_in:49) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:19,677 - (logged from test_login.py:logged_in:49) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:19,677 - (logged from test_login.py:logged_in:51) - tests.conftest - WARNING - _assuming user is logged in with the following credentials email:user@phptravels.com password:demouser -
+2019-01-30 12:50:19,677 - (logged from test_login.py:logged_in:51) - tests.conftest - WARNING - _assuming user is logged in with the following credentials email:user@phptravels.com password:demouser -
+2019-01-30 12:50:19,743 - (logged from test_login.py:input_credts:148) - tests.conftest - INFO - Login authentication with email: user@phptravels.com  password: demouser -
+2019-01-30 12:50:19,743 - (logged from test_login.py:input_credts:148) - tests.conftest - INFO - Login authentication with email: user@phptravels.com  password: demouser -
+2019-01-30 12:50:19,886 - (logged from test_login.py:input_credts:152) - tests.conftest - DEBUG - <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="240b2bbf-74f2-bf41-a583-fed22f75e8bf", element="028100e6-bced-364a-8c0a-a0371dcdedaf")> elem -
+2019-01-30 12:50:19,886 - (logged from test_login.py:input_credts:152) - tests.conftest - DEBUG - <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="240b2bbf-74f2-bf41-a583-fed22f75e8bf", element="028100e6-bced-364a-8c0a-a0371dcdedaf")> elem -
+2019-01-30 12:50:19,968 - (logged from test_login.py:input_credts:160) - tests.conftest - INFO - Current time : Wed Jan 30 12:50:19 2019 -
+2019-01-30 12:50:19,968 - (logged from test_login.py:input_credts:160) - tests.conftest - INFO - Current time : Wed Jan 30 12:50:19 2019 -
+2019-01-30 12:50:22,973 - (logged from test_login.py:input_credts:162) - tests.conftest - INFO - we waited for 5 sec and now its : Wed Jan 30 12:50:22 2019 -
+2019-01-30 12:50:22,973 - (logged from test_login.py:input_credts:162) - tests.conftest - INFO - we waited for 5 sec and now its : Wed Jan 30 12:50:22 2019 -
+2019-01-30 12:50:22,979 - (logged from test_login.py:input_credts:165) - tests.conftest - INFO - checking the url ...: https://www.phptravels.net/account/ -
+2019-01-30 12:50:22,979 - (logged from test_login.py:input_credts:165) - tests.conftest - INFO - checking the url ...: https://www.phptravels.net/account/ -
+2019-01-30 12:50:22,984 - (logged from test_login.py:logged_in:53) - tests.conftest - DEBUG - current browser.title My Account -
+2019-01-30 12:50:22,984 - (logged from test_login.py:logged_in:53) - tests.conftest - DEBUG - current browser.title My Account -
+2019-01-30 12:50:22,985 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "account_page""** -
+2019-01-30 12:50:22,985 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "account_page""** -
+2019-01-30 12:50:22,990 - (logged from test_login.py:afn:87) - tests.conftest - INFO - current title My Account -
+2019-01-30 12:50:22,990 - (logged from test_login.py:afn:87) - tests.conftest - INFO - current title My Account -
+2019-01-30 12:50:22,996 - (logged from test_login.py:afn:88) - tests.conftest - INFO - current url https://www.phptravels.net/account/ -
+2019-01-30 12:50:22,996 - (logged from test_login.py:afn:88) - tests.conftest - INFO - current url https://www.phptravels.net/account/ -
+2019-01-30 12:50:23,738 - (logged from test_login.py:afn:91) - tests.conftest - WARNING - should be redirecting to account_page https://www.phptravels.net/account -
+2019-01-30 12:50:23,738 - (logged from test_login.py:afn:91) - tests.conftest - WARNING - should be redirecting to account_page https://www.phptravels.net/account -
+2019-01-30 12:50:23,741 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "I select the Logout option"** -
+2019-01-30 12:50:23,741 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "I select the Logout option"** -
+2019-01-30 12:50:24,449 - (logged from test_login.py:logout:226) - tests.conftest - INFO - ___current title  -
+2019-01-30 12:50:24,449 - (logged from test_login.py:logout:226) - tests.conftest - INFO - ___current title  -
+2019-01-30 12:50:24,462 - (logged from test_login.py:logout:227) - tests.conftest - INFO - ___current url https://www.phptravels.net/account/logout/ -
+2019-01-30 12:50:24,462 - (logged from test_login.py:logout:227) - tests.conftest - INFO - ___current url https://www.phptravels.net/account/logout/ -
+2019-01-30 12:50:24,463 - (logged from test_login.py:logout:228) - tests.conftest - WARNING - ___logging out... -
+2019-01-30 12:50:24,463 - (logged from test_login.py:logout:228) - tests.conftest - WARNING - ___logging out... -
+2019-01-30 12:50:24,474 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "I should not be able to access my "account_page""** -
+2019-01-30 12:50:24,474 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "I should not be able to access my "account_page""** -
+2019-01-30 12:50:24,480 - (logged from test_login.py:logged_out:240) - tests.conftest - INFO - ___current title  -
+2019-01-30 12:50:24,480 - (logged from test_login.py:logged_out:240) - tests.conftest - INFO - ___current title  -
+2019-01-30 12:50:24,488 - (logged from test_login.py:logged_out:241) - tests.conftest - INFO - ___current url https://www.phptravels.net/account/logout/ -
+2019-01-30 12:50:24,488 - (logged from test_login.py:logged_out:241) - tests.conftest - INFO - ___current url https://www.phptravels.net/account/logout/ -
+2019-01-30 12:50:25,586 - (logged from test_login.py:logged_out:245) - tests.conftest - DEBUG - _requested_status_code 200 -
+2019-01-30 12:50:25,586 - (logged from test_login.py:logged_out:245) - tests.conftest - DEBUG - _requested_status_code 200 -
+2019-01-30 12:50:26,304 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "the phptravels Login page is displayed"** -
+2019-01-30 12:50:26,304 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "the phptravels Login page is displayed"** -
+2019-01-30 12:50:26,306 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:50:26,306 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:50:26,306 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:50:31,610 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 4554bc02-64d5-a84a-be06-e7e9f2ee9b64___ -
+2019-01-30 12:50:31,610 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 4554bc02-64d5-a84a-be06-e7e9f2ee9b64___ -
+2019-01-30 12:50:31,610 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 4554bc02-64d5-a84a-be06-e7e9f2ee9b64___ -
+2019-01-30 12:50:33,681 - (logged from test_login.py:login_page:35) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:33,681 - (logged from test_login.py:login_page:35) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:33,681 - (logged from test_login.py:login_page:35) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:33,693 - (logged from test_login.py:login_page:36) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:33,693 - (logged from test_login.py:login_page:36) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:33,693 - (logged from test_login.py:login_page:36) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:33,695 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am logged in"** -
+2019-01-30 12:50:33,695 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am logged in"** -
+2019-01-30 12:50:33,695 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am logged in"** -
+2019-01-30 12:50:33,704 - (logged from test_login.py:logged_in:48) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:33,704 - (logged from test_login.py:logged_in:48) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:33,704 - (logged from test_login.py:logged_in:48) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:33,717 - (logged from test_login.py:logged_in:49) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:33,717 - (logged from test_login.py:logged_in:49) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:33,717 - (logged from test_login.py:logged_in:49) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:33,718 - (logged from test_login.py:logged_in:51) - tests.conftest - WARNING - _assuming user is logged in with the following credentials email:user@phptravels.com password:demouser -
+2019-01-30 12:50:33,718 - (logged from test_login.py:logged_in:51) - tests.conftest - WARNING - _assuming user is logged in with the following credentials email:user@phptravels.com password:demouser -
+2019-01-30 12:50:33,718 - (logged from test_login.py:logged_in:51) - tests.conftest - WARNING - _assuming user is logged in with the following credentials email:user@phptravels.com password:demouser -
+2019-01-30 12:50:33,768 - (logged from test_login.py:input_credts:148) - tests.conftest - INFO - Login authentication with email: user@phptravels.com  password: demouser -
+2019-01-30 12:50:33,768 - (logged from test_login.py:input_credts:148) - tests.conftest - INFO - Login authentication with email: user@phptravels.com  password: demouser -
+2019-01-30 12:50:33,768 - (logged from test_login.py:input_credts:148) - tests.conftest - INFO - Login authentication with email: user@phptravels.com  password: demouser -
+2019-01-30 12:50:33,891 - (logged from test_login.py:input_credts:152) - tests.conftest - DEBUG - <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="4554bc02-64d5-a84a-be06-e7e9f2ee9b64", element="65986c17-44cb-024d-8492-bd3b7eac5561")> elem -
+2019-01-30 12:50:33,891 - (logged from test_login.py:input_credts:152) - tests.conftest - DEBUG - <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="4554bc02-64d5-a84a-be06-e7e9f2ee9b64", element="65986c17-44cb-024d-8492-bd3b7eac5561")> elem -
+2019-01-30 12:50:33,891 - (logged from test_login.py:input_credts:152) - tests.conftest - DEBUG - <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="4554bc02-64d5-a84a-be06-e7e9f2ee9b64", element="65986c17-44cb-024d-8492-bd3b7eac5561")> elem -
+2019-01-30 12:50:34,044 - (logged from test_login.py:input_credts:160) - tests.conftest - INFO - Current time : Wed Jan 30 12:50:34 2019 -
+2019-01-30 12:50:34,044 - (logged from test_login.py:input_credts:160) - tests.conftest - INFO - Current time : Wed Jan 30 12:50:34 2019 -
+2019-01-30 12:50:34,044 - (logged from test_login.py:input_credts:160) - tests.conftest - INFO - Current time : Wed Jan 30 12:50:34 2019 -
+2019-01-30 12:50:37,048 - (logged from test_login.py:input_credts:162) - tests.conftest - INFO - we waited for 5 sec and now its : Wed Jan 30 12:50:37 2019 -
+2019-01-30 12:50:37,048 - (logged from test_login.py:input_credts:162) - tests.conftest - INFO - we waited for 5 sec and now its : Wed Jan 30 12:50:37 2019 -
+2019-01-30 12:50:37,048 - (logged from test_login.py:input_credts:162) - tests.conftest - INFO - we waited for 5 sec and now its : Wed Jan 30 12:50:37 2019 -
+2019-01-30 12:50:37,056 - (logged from test_login.py:input_credts:165) - tests.conftest - INFO - checking the url ...: https://www.phptravels.net/account/ -
+2019-01-30 12:50:37,056 - (logged from test_login.py:input_credts:165) - tests.conftest - INFO - checking the url ...: https://www.phptravels.net/account/ -
+2019-01-30 12:50:37,056 - (logged from test_login.py:input_credts:165) - tests.conftest - INFO - checking the url ...: https://www.phptravels.net/account/ -
+2019-01-30 12:50:37,061 - (logged from test_login.py:logged_in:53) - tests.conftest - DEBUG - current browser.title My Account -
+2019-01-30 12:50:37,061 - (logged from test_login.py:logged_in:53) - tests.conftest - DEBUG - current browser.title My Account -
+2019-01-30 12:50:37,061 - (logged from test_login.py:logged_in:53) - tests.conftest - DEBUG - current browser.title My Account -
+2019-01-30 12:50:37,063 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "home_page""** -
+2019-01-30 12:50:37,063 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "home_page""** -
+2019-01-30 12:50:37,063 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "home_page""** -
+2019-01-30 12:50:37,069 - (logged from test_login.py:afn:87) - tests.conftest - INFO - current title My Account -
+2019-01-30 12:50:37,069 - (logged from test_login.py:afn:87) - tests.conftest - INFO - current title My Account -
+2019-01-30 12:50:37,069 - (logged from test_login.py:afn:87) - tests.conftest - INFO - current title My Account -
+2019-01-30 12:50:37,074 - (logged from test_login.py:afn:88) - tests.conftest - INFO - current url https://www.phptravels.net/account/ -
+2019-01-30 12:50:37,074 - (logged from test_login.py:afn:88) - tests.conftest - INFO - current url https://www.phptravels.net/account/ -
+2019-01-30 12:50:37,074 - (logged from test_login.py:afn:88) - tests.conftest - INFO - current url https://www.phptravels.net/account/ -
+2019-01-30 12:50:37,792 - (logged from test_login.py:afn:91) - tests.conftest - WARNING - should be redirecting to account_page https://www.phptravels.net/account -
+2019-01-30 12:50:37,792 - (logged from test_login.py:afn:91) - tests.conftest - WARNING - should be redirecting to account_page https://www.phptravels.net/account -
+2019-01-30 12:50:37,792 - (logged from test_login.py:afn:91) - tests.conftest - WARNING - should be redirecting to account_page https://www.phptravels.net/account -
+2019-01-30 12:50:37,794 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "I select the Login option from the My Account drop down"** -
+2019-01-30 12:50:37,794 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "I select the Login option from the My Account drop down"** -
+2019-01-30 12:50:37,794 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "I select the Login option from the My Account drop down"** -
+2019-01-30 12:50:37,806 - (logged from test_login.py:back_home:106) - tests.conftest - INFO - current title My Account -
+2019-01-30 12:50:37,806 - (logged from test_login.py:back_home:106) - tests.conftest - INFO - current title My Account -
+2019-01-30 12:50:37,806 - (logged from test_login.py:back_home:106) - tests.conftest - INFO - current title My Account -
+2019-01-30 12:50:37,812 - (logged from test_login.py:back_home:107) - tests.conftest - INFO - current url https://www.phptravels.net/account -
+2019-01-30 12:50:37,812 - (logged from test_login.py:back_home:107) - tests.conftest - INFO - current url https://www.phptravels.net/account -
+2019-01-30 12:50:37,812 - (logged from test_login.py:back_home:107) - tests.conftest - INFO - current url https://www.phptravels.net/account -
+2019-01-30 12:50:41,194 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "I should be redirected to my "account_page""** -
+2019-01-30 12:50:41,194 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "I should be redirected to my "account_page""** -
+2019-01-30 12:50:41,194 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "I should be redirected to my "account_page""** -
+2019-01-30 12:50:41,204 - (logged from test_login.py:redirected_to_acc:206) - tests.conftest - INFO - ___current title My Account -
+2019-01-30 12:50:41,204 - (logged from test_login.py:redirected_to_acc:206) - tests.conftest - INFO - ___current title My Account -
+2019-01-30 12:50:41,204 - (logged from test_login.py:redirected_to_acc:206) - tests.conftest - INFO - ___current title My Account -
+2019-01-30 12:50:41,210 - (logged from test_login.py:redirected_to_acc:207) - tests.conftest - INFO - ___current url https://www.phptravels.net/account -
+2019-01-30 12:50:41,210 - (logged from test_login.py:redirected_to_acc:207) - tests.conftest - INFO - ___current url https://www.phptravels.net/account -
+2019-01-30 12:50:41,210 - (logged from test_login.py:redirected_to_acc:207) - tests.conftest - INFO - ___current url https://www.phptravels.net/account -
+2019-01-30 12:50:41,918 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "the phptravels Login page is displayed"** -
+2019-01-30 12:50:41,918 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "the phptravels Login page is displayed"** -
+2019-01-30 12:50:41,918 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "the phptravels Login page is displayed"** -
+2019-01-30 12:50:41,919 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:50:41,919 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:50:41,919 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:50:41,919 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:50:47,026 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id ce6038dd-411a-dc4a-b6ad-763eae93a3dc___ -
+2019-01-30 12:50:47,026 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id ce6038dd-411a-dc4a-b6ad-763eae93a3dc___ -
+2019-01-30 12:50:47,026 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id ce6038dd-411a-dc4a-b6ad-763eae93a3dc___ -
+2019-01-30 12:50:47,026 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id ce6038dd-411a-dc4a-b6ad-763eae93a3dc___ -
+2019-01-30 12:50:49,349 - (logged from test_login.py:login_page:35) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:49,349 - (logged from test_login.py:login_page:35) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:49,349 - (logged from test_login.py:login_page:35) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:49,349 - (logged from test_login.py:login_page:35) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:49,363 - (logged from test_login.py:login_page:36) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:49,363 - (logged from test_login.py:login_page:36) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:49,363 - (logged from test_login.py:login_page:36) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:49,363 - (logged from test_login.py:login_page:36) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:49,365 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "I input incorrect email or password"** -
+2019-01-30 12:50:49,365 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "I input incorrect email or password"** -
+2019-01-30 12:50:49,365 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "I input incorrect email or password"** -
+2019-01-30 12:50:49,365 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "I input incorrect email or password"** -
+2019-01-30 12:50:49,374 - (logged from test_login.py:invalid_credts:175) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:49,374 - (logged from test_login.py:invalid_credts:175) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:49,374 - (logged from test_login.py:invalid_credts:175) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:49,374 - (logged from test_login.py:invalid_credts:175) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:49,385 - (logged from test_login.py:invalid_credts:176) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:49,385 - (logged from test_login.py:invalid_credts:176) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:49,385 - (logged from test_login.py:invalid_credts:176) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:49,385 - (logged from test_login.py:invalid_credts:176) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:49,418 - (logged from test_login.py:input_credts:148) - tests.conftest - INFO - Login authentication with email:    password: demouser -
+2019-01-30 12:50:49,418 - (logged from test_login.py:input_credts:148) - tests.conftest - INFO - Login authentication with email:    password: demouser -
+2019-01-30 12:50:49,418 - (logged from test_login.py:input_credts:148) - tests.conftest - INFO - Login authentication with email:    password: demouser -
+2019-01-30 12:50:49,418 - (logged from test_login.py:input_credts:148) - tests.conftest - INFO - Login authentication with email:    password: demouser -
+2019-01-30 12:50:49,491 - (logged from test_login.py:input_credts:152) - tests.conftest - DEBUG - <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="ce6038dd-411a-dc4a-b6ad-763eae93a3dc", element="11748ad4-a894-9348-9950-15dc56d13da7")> elem -
+2019-01-30 12:50:49,491 - (logged from test_login.py:input_credts:152) - tests.conftest - DEBUG - <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="ce6038dd-411a-dc4a-b6ad-763eae93a3dc", element="11748ad4-a894-9348-9950-15dc56d13da7")> elem -
+2019-01-30 12:50:49,491 - (logged from test_login.py:input_credts:152) - tests.conftest - DEBUG - <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="ce6038dd-411a-dc4a-b6ad-763eae93a3dc", element="11748ad4-a894-9348-9950-15dc56d13da7")> elem -
+2019-01-30 12:50:49,491 - (logged from test_login.py:input_credts:152) - tests.conftest - DEBUG - <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="ce6038dd-411a-dc4a-b6ad-763eae93a3dc", element="11748ad4-a894-9348-9950-15dc56d13da7")> elem -
+2019-01-30 12:50:49,620 - (logged from test_login.py:input_credts:160) - tests.conftest - INFO - Current time : Wed Jan 30 12:50:49 2019 -
+2019-01-30 12:50:49,620 - (logged from test_login.py:input_credts:160) - tests.conftest - INFO - Current time : Wed Jan 30 12:50:49 2019 -
+2019-01-30 12:50:49,620 - (logged from test_login.py:input_credts:160) - tests.conftest - INFO - Current time : Wed Jan 30 12:50:49 2019 -
+2019-01-30 12:50:49,620 - (logged from test_login.py:input_credts:160) - tests.conftest - INFO - Current time : Wed Jan 30 12:50:49 2019 -
+2019-01-30 12:50:52,626 - (logged from test_login.py:input_credts:162) - tests.conftest - INFO - we waited for 5 sec and now its : Wed Jan 30 12:50:52 2019 -
+2019-01-30 12:50:52,626 - (logged from test_login.py:input_credts:162) - tests.conftest - INFO - we waited for 5 sec and now its : Wed Jan 30 12:50:52 2019 -
+2019-01-30 12:50:52,626 - (logged from test_login.py:input_credts:162) - tests.conftest - INFO - we waited for 5 sec and now its : Wed Jan 30 12:50:52 2019 -
+2019-01-30 12:50:52,626 - (logged from test_login.py:input_credts:162) - tests.conftest - INFO - we waited for 5 sec and now its : Wed Jan 30 12:50:52 2019 -
+2019-01-30 12:50:52,647 - (logged from test_login.py:input_credts:165) - tests.conftest - INFO - checking the url ...: https://www.phptravels.net/login -
+2019-01-30 12:50:52,647 - (logged from test_login.py:input_credts:165) - tests.conftest - INFO - checking the url ...: https://www.phptravels.net/login -
+2019-01-30 12:50:52,647 - (logged from test_login.py:input_credts:165) - tests.conftest - INFO - checking the url ...: https://www.phptravels.net/login -
+2019-01-30 12:50:52,647 - (logged from test_login.py:input_credts:165) - tests.conftest - INFO - checking the url ...: https://www.phptravels.net/login -
+2019-01-30 12:50:52,653 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "I should see the Login page with a warning message"** -
+2019-01-30 12:50:52,653 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "I should see the Login page with a warning message"** -
+2019-01-30 12:50:52,653 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "I should see the Login page with a warning message"** -
+2019-01-30 12:50:52,653 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "I should see the Login page with a warning message"** -
+2019-01-30 12:50:52,654 - (logged from test_login.py:failed_login:189) - tests.conftest - WARNING - redirecting back to login page -
+2019-01-30 12:50:52,654 - (logged from test_login.py:failed_login:189) - tests.conftest - WARNING - redirecting back to login page -
+2019-01-30 12:50:52,654 - (logged from test_login.py:failed_login:189) - tests.conftest - WARNING - redirecting back to login page -
+2019-01-30 12:50:52,654 - (logged from test_login.py:failed_login:189) - tests.conftest - WARNING - redirecting back to login page -
+2019-01-30 12:50:52,663 - (logged from test_login.py:failed_login:190) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:52,663 - (logged from test_login.py:failed_login:190) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:52,663 - (logged from test_login.py:failed_login:190) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:52,663 - (logged from test_login.py:failed_login:190) - tests.conftest - INFO - ___current title Login -
+2019-01-30 12:50:52,668 - (logged from test_login.py:failed_login:191) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:52,668 - (logged from test_login.py:failed_login:191) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:52,668 - (logged from test_login.py:failed_login:191) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:52,668 - (logged from test_login.py:failed_login:191) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 12:50:53,430 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:50:53,430 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:50:53,430 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:50:53,430 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:50:53,432 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:50:53,432 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:50:53,432 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:50:53,432 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:50:53,432 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:50:59,318 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 038347f5-4d42-194a-b9fb-d83a16ae64ce___ -
+2019-01-30 12:50:59,318 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 038347f5-4d42-194a-b9fb-d83a16ae64ce___ -
+2019-01-30 12:50:59,318 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 038347f5-4d42-194a-b9fb-d83a16ae64ce___ -
+2019-01-30 12:50:59,318 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 038347f5-4d42-194a-b9fb-d83a16ae64ce___ -
+2019-01-30 12:50:59,318 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 038347f5-4d42-194a-b9fb-d83a16ae64ce___ -
+2019-01-30 12:51:02,496 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:02,496 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:02,496 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:02,496 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:02,496 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:02,501 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: Paris|24/12/2018|25/12/2018|3_5 -
+2019-01-30 12:51:02,501 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: Paris|24/12/2018|25/12/2018|3_5 -
+2019-01-30 12:51:02,501 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: Paris|24/12/2018|25/12/2018|3_5 -
+2019-01-30 12:51:02,501 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: Paris|24/12/2018|25/12/2018|3_5 -
+2019-01-30 12:51:02,501 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: Paris|24/12/2018|25/12/2018|3_5 -
+2019-01-30 12:51:02,504 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 5 -
+2019-01-30 12:51:02,504 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 5 -
+2019-01-30 12:51:02,504 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 5 -
+2019-01-30 12:51:02,504 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 5 -
+2019-01-30 12:51:02,504 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 5 -
+2019-01-30 12:51:05,458 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 24/12/2018 -
+2019-01-30 12:51:05,458 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 24/12/2018 -
+2019-01-30 12:51:05,458 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 24/12/2018 -
+2019-01-30 12:51:05,458 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 24/12/2018 -
+2019-01-30 12:51:05,458 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 24/12/2018 -
+2019-01-30 12:51:06,544 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :3 -
+2019-01-30 12:51:06,544 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :3 -
+2019-01-30 12:51:06,544 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :3 -
+2019-01-30 12:51:06,544 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :3 -
+2019-01-30 12:51:06,544 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :3 -
+2019-01-30 12:51:08,881 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:08,881 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:08,881 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:08,881 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:08,881 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:10,389 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url /Paris/24-12-2018/25-12-2018/3/5 -
+2019-01-30 12:51:10,389 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url /Paris/24-12-2018/25-12-2018/3/5 -
+2019-01-30 12:51:10,389 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url /Paris/24-12-2018/25-12-2018/3/5 -
+2019-01-30 12:51:10,389 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url /Paris/24-12-2018/25-12-2018/3/5 -
+2019-01-30 12:51:10,389 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url /Paris/24-12-2018/25-12-2018/3/5 -
+2019-01-30 12:51:10,392 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url /Paris/24-12-2018/25-12-2018/3/5 -
+2019-01-30 12:51:10,392 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url /Paris/24-12-2018/25-12-2018/3/5 -
+2019-01-30 12:51:10,392 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url /Paris/24-12-2018/25-12-2018/3/5 -
+2019-01-30 12:51:10,392 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url /Paris/24-12-2018/25-12-2018/3/5 -
+2019-01-30 12:51:10,392 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url /Paris/24-12-2018/25-12-2018/3/5 -
+2019-01-30 12:51:10,393 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:10,393 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:10,393 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:10,393 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:10,393 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:11,185 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:11,185 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:11,185 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:11,185 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:11,185 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:11,187 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:11,187 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:11,187 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:11,187 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:11,187 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:11,187 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:17,173 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 9faac17c-0e45-5f49-a8f9-e746c4dfe5de___ -
+2019-01-30 12:51:17,173 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 9faac17c-0e45-5f49-a8f9-e746c4dfe5de___ -
+2019-01-30 12:51:17,173 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 9faac17c-0e45-5f49-a8f9-e746c4dfe5de___ -
+2019-01-30 12:51:17,173 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 9faac17c-0e45-5f49-a8f9-e746c4dfe5de___ -
+2019-01-30 12:51:17,173 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 9faac17c-0e45-5f49-a8f9-e746c4dfe5de___ -
+2019-01-30 12:51:17,173 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 9faac17c-0e45-5f49-a8f9-e746c4dfe5de___ -
+2019-01-30 12:51:20,718 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:20,718 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:20,718 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:20,718 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:20,718 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:20,718 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:20,720 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: Pune|01/01/2019|26/02/2019|2_1 -
+2019-01-30 12:51:20,720 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: Pune|01/01/2019|26/02/2019|2_1 -
+2019-01-30 12:51:20,720 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: Pune|01/01/2019|26/02/2019|2_1 -
+2019-01-30 12:51:20,720 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: Pune|01/01/2019|26/02/2019|2_1 -
+2019-01-30 12:51:20,720 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: Pune|01/01/2019|26/02/2019|2_1 -
+2019-01-30 12:51:20,720 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: Pune|01/01/2019|26/02/2019|2_1 -
+2019-01-30 12:51:20,722 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 4 -
+2019-01-30 12:51:20,722 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 4 -
+2019-01-30 12:51:20,722 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 4 -
+2019-01-30 12:51:20,722 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 4 -
+2019-01-30 12:51:20,722 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 4 -
+2019-01-30 12:51:20,722 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 4 -
+2019-01-30 12:51:23,914 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 01/01/2019 -
+2019-01-30 12:51:23,914 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 01/01/2019 -
+2019-01-30 12:51:23,914 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 01/01/2019 -
+2019-01-30 12:51:23,914 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 01/01/2019 -
+2019-01-30 12:51:23,914 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 01/01/2019 -
+2019-01-30 12:51:23,914 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 01/01/2019 -
+2019-01-30 12:51:25,065 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :2 -
+2019-01-30 12:51:25,065 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :2 -
+2019-01-30 12:51:25,065 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :2 -
+2019-01-30 12:51:25,065 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :2 -
+2019-01-30 12:51:25,065 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :2 -
+2019-01-30 12:51:25,065 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :2 -
+2019-01-30 12:51:25,669 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:25,669 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:25,669 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:25,669 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:25,669 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:25,669 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:27,393 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url /Pune/01-01-2019/26-02-2019/2/1 -
+2019-01-30 12:51:27,393 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url /Pune/01-01-2019/26-02-2019/2/1 -
+2019-01-30 12:51:27,393 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url /Pune/01-01-2019/26-02-2019/2/1 -
+2019-01-30 12:51:27,393 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url /Pune/01-01-2019/26-02-2019/2/1 -
+2019-01-30 12:51:27,393 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url /Pune/01-01-2019/26-02-2019/2/1 -
+2019-01-30 12:51:27,393 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url /Pune/01-01-2019/26-02-2019/2/1 -
+2019-01-30 12:51:27,402 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url /Pune/01-01-2019/26-02-2019/2/1 -
+2019-01-30 12:51:27,402 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url /Pune/01-01-2019/26-02-2019/2/1 -
+2019-01-30 12:51:27,402 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url /Pune/01-01-2019/26-02-2019/2/1 -
+2019-01-30 12:51:27,402 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url /Pune/01-01-2019/26-02-2019/2/1 -
+2019-01-30 12:51:27,402 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url /Pune/01-01-2019/26-02-2019/2/1 -
+2019-01-30 12:51:27,402 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url /Pune/01-01-2019/26-02-2019/2/1 -
+2019-01-30 12:51:27,404 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:27,404 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:27,404 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:27,404 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:27,404 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:27,404 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:28,334 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:28,334 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:28,334 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:28,334 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:28,334 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:28,334 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:28,336 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:28,336 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:28,336 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:28,336 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:28,336 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:28,336 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:28,336 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:32,523 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 7caa6339-c133-a340-8819-3af6a9ccaa37___ -
+2019-01-30 12:51:32,523 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 7caa6339-c133-a340-8819-3af6a9ccaa37___ -
+2019-01-30 12:51:32,523 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 7caa6339-c133-a340-8819-3af6a9ccaa37___ -
+2019-01-30 12:51:32,523 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 7caa6339-c133-a340-8819-3af6a9ccaa37___ -
+2019-01-30 12:51:32,523 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 7caa6339-c133-a340-8819-3af6a9ccaa37___ -
+2019-01-30 12:51:32,523 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 7caa6339-c133-a340-8819-3af6a9ccaa37___ -
+2019-01-30 12:51:32,523 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 7caa6339-c133-a340-8819-3af6a9ccaa37___ -
+2019-01-30 12:51:35,962 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:35,962 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:35,962 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:35,962 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:35,962 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:35,962 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:35,962 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters the query data <city>,<checkin_date>,<checkout_date>,<family_size>"** -
+2019-01-30 12:51:35,964 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: _blank_|01/01/2019|26/02/2019|0_5 -
+2019-01-30 12:51:35,964 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: _blank_|01/01/2019|26/02/2019|0_5 -
+2019-01-30 12:51:35,964 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: _blank_|01/01/2019|26/02/2019|0_5 -
+2019-01-30 12:51:35,964 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: _blank_|01/01/2019|26/02/2019|0_5 -
+2019-01-30 12:51:35,964 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: _blank_|01/01/2019|26/02/2019|0_5 -
+2019-01-30 12:51:35,964 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: _blank_|01/01/2019|26/02/2019|0_5 -
+2019-01-30 12:51:35,964 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: _blank_|01/01/2019|26/02/2019|0_5 -
+2019-01-30 12:51:35,966 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 0 -
+2019-01-30 12:51:35,966 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 0 -
+2019-01-30 12:51:35,966 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 0 -
+2019-01-30 12:51:35,966 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 0 -
+2019-01-30 12:51:35,966 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 0 -
+2019-01-30 12:51:35,966 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 0 -
+2019-01-30 12:51:35,966 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 0 -
+2019-01-30 12:51:35,968 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 01/01/2019 -
+2019-01-30 12:51:35,968 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 01/01/2019 -
+2019-01-30 12:51:35,968 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 01/01/2019 -
+2019-01-30 12:51:35,968 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 01/01/2019 -
+2019-01-30 12:51:35,968 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 01/01/2019 -
+2019-01-30 12:51:35,968 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 01/01/2019 -
+2019-01-30 12:51:35,968 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping 01/01/2019 -
+2019-01-30 12:51:37,037 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :0 -
+2019-01-30 12:51:37,037 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :0 -
+2019-01-30 12:51:37,037 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :0 -
+2019-01-30 12:51:37,037 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :0 -
+2019-01-30 12:51:37,037 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :0 -
+2019-01-30 12:51:37,037 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :0 -
+2019-01-30 12:51:37,037 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :0 -
+2019-01-30 12:51:39,262 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:39,262 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:39,262 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:39,262 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:39,262 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:39,262 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:39,262 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:42,131 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url //01-01-2019/26-02-2019/0/5 -
+2019-01-30 12:51:42,131 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url //01-01-2019/26-02-2019/0/5 -
+2019-01-30 12:51:42,131 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url //01-01-2019/26-02-2019/0/5 -
+2019-01-30 12:51:42,131 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url //01-01-2019/26-02-2019/0/5 -
+2019-01-30 12:51:42,131 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url //01-01-2019/26-02-2019/0/5 -
+2019-01-30 12:51:42,131 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url //01-01-2019/26-02-2019/0/5 -
+2019-01-30 12:51:42,131 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url //01-01-2019/26-02-2019/0/5 -
+2019-01-30 12:51:42,134 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url //01-01-2019/26-02-2019/0/5 -
+2019-01-30 12:51:42,134 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url //01-01-2019/26-02-2019/0/5 -
+2019-01-30 12:51:42,134 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url //01-01-2019/26-02-2019/0/5 -
+2019-01-30 12:51:42,134 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url //01-01-2019/26-02-2019/0/5 -
+2019-01-30 12:51:42,134 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url //01-01-2019/26-02-2019/0/5 -
+2019-01-30 12:51:42,134 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url //01-01-2019/26-02-2019/0/5 -
+2019-01-30 12:51:42,134 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url //01-01-2019/26-02-2019/0/5 -
+2019-01-30 12:51:42,136 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:42,136 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:42,136 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:42,136 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:42,136 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:42,136 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:42,136 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The search results are displayed"** -
+2019-01-30 12:51:42,923 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:42,923 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:42,923 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:42,923 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:42,923 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:42,923 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:42,923 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "I am an authenticated user in the "hotels_page""** -
+2019-01-30 12:51:42,925 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:42,925 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:42,925 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:42,925 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:42,925 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:42,925 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:42,925 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:42,925 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 12:49:56 2019___ -
+2019-01-30 12:51:48,265 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 9b85e6ff-081a-ec41-b9e6-24a55e78c930___ -
+2019-01-30 12:51:48,265 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 9b85e6ff-081a-ec41-b9e6-24a55e78c930___ -
+2019-01-30 12:51:48,265 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 9b85e6ff-081a-ec41-b9e6-24a55e78c930___ -
+2019-01-30 12:51:48,265 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 9b85e6ff-081a-ec41-b9e6-24a55e78c930___ -
+2019-01-30 12:51:48,265 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 9b85e6ff-081a-ec41-b9e6-24a55e78c930___ -
+2019-01-30 12:51:48,265 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 9b85e6ff-081a-ec41-b9e6-24a55e78c930___ -
+2019-01-30 12:51:48,265 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 9b85e6ff-081a-ec41-b9e6-24a55e78c930___ -
+2019-01-30 12:51:48,265 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 9b85e6ff-081a-ec41-b9e6-24a55e78c930___ -
+2019-01-30 12:51:51,345 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters "incomplete" data"** -
+2019-01-30 12:51:51,345 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters "incomplete" data"** -
+2019-01-30 12:51:51,345 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters "incomplete" data"** -
+2019-01-30 12:51:51,345 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters "incomplete" data"** -
+2019-01-30 12:51:51,345 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters "incomplete" data"** -
+2019-01-30 12:51:51,345 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters "incomplete" data"** -
+2019-01-30 12:51:51,345 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters "incomplete" data"** -
+2019-01-30 12:51:51,345 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "The user enters "incomplete" data"** -
+2019-01-30 12:51:51,347 - (logged from test_search_hotels.py:incomplete_search_input:150) - tests.conftest - WARNING - __incomplete... -
+2019-01-30 12:51:51,347 - (logged from test_search_hotels.py:incomplete_search_input:150) - tests.conftest - WARNING - __incomplete... -
+2019-01-30 12:51:51,347 - (logged from test_search_hotels.py:incomplete_search_input:150) - tests.conftest - WARNING - __incomplete... -
+2019-01-30 12:51:51,347 - (logged from test_search_hotels.py:incomplete_search_input:150) - tests.conftest - WARNING - __incomplete... -
+2019-01-30 12:51:51,347 - (logged from test_search_hotels.py:incomplete_search_input:150) - tests.conftest - WARNING - __incomplete... -
+2019-01-30 12:51:51,347 - (logged from test_search_hotels.py:incomplete_search_input:150) - tests.conftest - WARNING - __incomplete... -
+2019-01-30 12:51:51,347 - (logged from test_search_hotels.py:incomplete_search_input:150) - tests.conftest - WARNING - __incomplete... -
+2019-01-30 12:51:51,347 - (logged from test_search_hotels.py:incomplete_search_input:150) - tests.conftest - WARNING - __incomplete... -
+2019-01-30 12:51:51,348 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: _blank_|_blank_|_blank_|2_0 -
+2019-01-30 12:51:51,348 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: _blank_|_blank_|_blank_|2_0 -
+2019-01-30 12:51:51,348 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: _blank_|_blank_|_blank_|2_0 -
+2019-01-30 12:51:51,348 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: _blank_|_blank_|_blank_|2_0 -
+2019-01-30 12:51:51,348 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: _blank_|_blank_|_blank_|2_0 -
+2019-01-30 12:51:51,348 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: _blank_|_blank_|_blank_|2_0 -
+2019-01-30 12:51:51,348 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: _blank_|_blank_|_blank_|2_0 -
+2019-01-30 12:51:51,348 - (logged from test_search_hotels.py:search_inputs:63) - tests.conftest - INFO - __search query input data: _blank_|_blank_|_blank_|2_0 -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 0 -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 0 -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 0 -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 0 -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 0 -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 0 -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 0 -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:64) - tests.conftest - DEBUG - city 0 -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping  -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping  -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping  -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping  -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping  -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping  -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping  -
+2019-01-30 12:51:51,349 - (logged from test_search_hotels.py:search_inputs:75) - tests.conftest - DEBUG - stripping  -
+2019-01-30 12:51:52,218 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :2 -
+2019-01-30 12:51:52,218 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :2 -
+2019-01-30 12:51:52,218 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :2 -
+2019-01-30 12:51:52,218 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :2 -
+2019-01-30 12:51:52,218 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :2 -
+2019-01-30 12:51:52,218 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :2 -
+2019-01-30 12:51:52,218 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :2 -
+2019-01-30 12:51:52,218 - (logged from test_search_hotels.py:search_inputs:90) - tests.conftest - DEBUG - __input data:adults :2 -
+2019-01-30 12:51:52,280 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:52,280 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:52,280 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:52,280 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:52,280 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:52,280 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:52,280 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:52,280 - (logged from test_search_hotels.py:search_inputs:109) - tests.conftest - WARNING - __url before search query https://www.phptravels.net/ -
+2019-01-30 12:51:52,626 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url ////2/0 -
+2019-01-30 12:51:52,626 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url ////2/0 -
+2019-01-30 12:51:52,626 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url ////2/0 -
+2019-01-30 12:51:52,626 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url ////2/0 -
+2019-01-30 12:51:52,626 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url ////2/0 -
+2019-01-30 12:51:52,626 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url ////2/0 -
+2019-01-30 12:51:52,626 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url ////2/0 -
+2019-01-30 12:51:52,626 - (logged from test_search_hotels.py:search_inputs:120) - tests.conftest - WARNING - __search url ////2/0 -
+2019-01-30 12:51:52,627 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url ////2/0 -
+2019-01-30 12:51:52,627 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url ////2/0 -
+2019-01-30 12:51:52,627 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url ////2/0 -
+2019-01-30 12:51:52,627 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url ////2/0 -
+2019-01-30 12:51:52,627 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url ////2/0 -
+2019-01-30 12:51:52,627 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url ////2/0 -
+2019-01-30 12:51:52,627 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url ////2/0 -
+2019-01-30 12:51:52,627 - (logged from test_search_hotels.py:search_inputs:122) - tests.conftest - INFO - ___ext-url ////2/0 -
+2019-01-30 12:51:52,629 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The web page reloads with a warning message on missing the data"** -
+2019-01-30 12:51:52,629 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The web page reloads with a warning message on missing the data"** -
+2019-01-30 12:51:52,629 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The web page reloads with a warning message on missing the data"** -
+2019-01-30 12:51:52,629 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The web page reloads with a warning message on missing the data"** -
+2019-01-30 12:51:52,629 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The web page reloads with a warning message on missing the data"** -
+2019-01-30 12:51:52,629 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The web page reloads with a warning message on missing the data"** -
+2019-01-30 12:51:52,629 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The web page reloads with a warning message on missing the data"** -
+2019-01-30 12:51:52,629 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "The web page reloads with a warning message on missing the data"** -
+2019-01-30 12:51:52,661 - (logged from test_search_hotels.py:alert_incomplete_data:169) - tests.conftest - WARNING - _actual alert text : Please fill out this field. -
+2019-01-30 12:51:52,661 - (logged from test_search_hotels.py:alert_incomplete_data:169) - tests.conftest - WARNING - _actual alert text : Please fill out this field. -
+2019-01-30 12:51:52,661 - (logged from test_search_hotels.py:alert_incomplete_data:169) - tests.conftest - WARNING - _actual alert text : Please fill out this field. -
+2019-01-30 12:51:52,661 - (logged from test_search_hotels.py:alert_incomplete_data:169) - tests.conftest - WARNING - _actual alert text : Please fill out this field. -
+2019-01-30 12:51:52,661 - (logged from test_search_hotels.py:alert_incomplete_data:169) - tests.conftest - WARNING - _actual alert text : Please fill out this field. -
+2019-01-30 12:51:52,661 - (logged from test_search_hotels.py:alert_incomplete_data:169) - tests.conftest - WARNING - _actual alert text : Please fill out this field. -
+2019-01-30 12:51:52,661 - (logged from test_search_hotels.py:alert_incomplete_data:169) - tests.conftest - WARNING - _actual alert text : Please fill out this field. -
+2019-01-30 12:51:52,661 - (logged from test_search_hotels.py:alert_incomplete_data:169) - tests.conftest - WARNING - _actual alert text : Please fill out this field. -

@@ -1,16 +1,1 @@
-Wed Jan 30 12:09:55 2019___tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]
-Wed Jan 30 12:09:55 2019___tests/steps/test_login.py::test_logout_successful
-Wed Jan 30 12:09:55 2019___tests/steps/test_login.py::test_already_logged_in
-Wed Jan 30 12:09:55 2019___tests/steps/test_login.py::test_unsuccessful_login
-Wed Jan 30 12:09:55 2019___tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-3_5]
-Wed Jan 30 12:09:55 2019___tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-2_1]
-Wed Jan 30 12:09:55 2019___tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[-01/01/2019-26/02/2019-0_5]
-Wed Jan 30 12:09:55 2019___tests/steps/test_search_hotels.py::test_incomplete_search_data
-Wed Jan 30 12:14:06 2019___tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]
-Wed Jan 30 12:14:06 2019___tests/steps/test_login.py::test_logout_successful
-Wed Jan 30 12:14:06 2019___tests/steps/test_login.py::test_already_logged_in
-Wed Jan 30 12:14:06 2019___tests/steps/test_login.py::test_unsuccessful_login
-Wed Jan 30 12:14:06 2019___tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-3_5]
-Wed Jan 30 12:14:06 2019___tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-2_1]
-Wed Jan 30 12:14:06 2019___tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[-01/01/2019-26/02/2019-0_5]
-Wed Jan 30 12:14:06 2019___tests/steps/test_search_hotels.py::test_incomplete_search_data
+Wed Jan 30 12:49:56 2019___tests/steps/test_search_hotels.py::test_incomplete_search_data
