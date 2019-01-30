@@ -38,7 +38,9 @@ many current functionalities are not resilient against edge cases
             
  ![ss1](screenshots/ss1.png "screenshot 1")
  ![ss2](screenshots/ss2.png "screenshot 2")
-
+We could 
+> track/ monitor both transient and non-transient exceptions
+> perform boundary value and decision-based tests to take care of some issues such as "entering 0 and 0 for family size in hotel search
 
 ## Exercise 4:
 
