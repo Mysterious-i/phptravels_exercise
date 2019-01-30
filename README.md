@@ -39,9 +39,10 @@ many current functionalities are not resilient against edge cases
  ![ss1](screenshots/ss1.png "screenshot 1")
  ![ss2](screenshots/ss2.png "screenshot 2")
 We could 
-> track/ monitor both transient and non-transient exceptions
-> perform boundary value and decision-based tests to take care of some issues such as "entering 0 and 0 for family size in hotel search
-
+- track/ monitor both transient and non-transient exceptions
+- perform boundary value and decision-based tests to take care of some issues such as "entering 0 and 0 for family size in hotel search"
+- find and fix broken links eg. the visa search
+- perform UI automation tests
 ## Exercise 4:
 
 > Take a look around the website and list and justify three happy paths that we could test to ensure some more core functionalities of our application are working, and for each one, list two edge cases that could be tested. Choose one of the happy paths and implement it and its edge cases.
