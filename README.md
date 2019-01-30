@@ -31,7 +31,7 @@ Page: http://www.phptravels.net Email: user@phptravels.com Password: demouser
 > Discuss what could be implemented on the application side to make the website more resilient, and if and how these improvements can be tested.
 
 many current functionalities are not resilient against edge cases
-- The Login/Sign up forms do not account for email address validity
+- The Login/Sign up forms do not account for email address validity -> test manadatory field validation, form validation, and verify the character resistrictions on the fields.
 - Once logged in, regardless of the user's name, different paths within the site display inconsistent text in the My Account element
             eg.https://www.phptravels.net/m-hotels displays a different name in the account dropdown
             
@@ -39,10 +39,12 @@ many current functionalities are not resilient against edge cases
  ![ss1](screenshots/ss1.png "screenshot 1")
  ![ss2](screenshots/ss2.png "screenshot 2")
 We could 
-- track/ monitor both transient and non-transient exceptions
-- perform boundary value and decision-based tests to take care of some issues such as "entering 0 and 0 for family size in hotel search"
-- find and fix broken links eg. the visa search
-- perform UI automation tests
+- Track/ monitor both transient and non-transient exceptions
+- Perform boundary value and decision-based tests to take care of some issues such as "entering 0 and 0 for family size in hotel search"
+- Check all the links within the site: find and fix broken links eg. the visa search
+- Validate HTML and CSS files : have consistency in naming so that automating certain user actions or ui tests are more facile
+- Add security measures eg. having CAPTCHA and testing it for login scripts
+
 ## Exercise 4:
 
 > Take a look around the website and list and justify three happy paths that we could test to ensure some more core functionalities of our application are working, and for each one, list two edge cases that could be tested. Choose one of the happy paths and implement it and its edge cases.
