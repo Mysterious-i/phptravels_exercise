@@ -37,8 +37,6 @@ Page: http://www.phptravels.net Email: user@phptravels.com Password: demouser
 > Take a look around the website and list and justify three happy paths that we could test to ensure some more core functionalities of our application are working, and for each one, list two edge cases that could be tested. Choose one of the happy paths and implement it and its edge cases.
 
 ### Chosen Functionality Scenarios:
-Definitions
-
 - ##### 'Sign up'
     
     - :smile: An anonymous user is able to sign up with valid credentials
