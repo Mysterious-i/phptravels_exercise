@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f72185d-aea8-48d3-ace3-a2cb93933787" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/page-objs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/testSite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/testSite.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/features/login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/features/search_hotels.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/features/search_hotels.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/steps/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/steps/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/steps/test_search_hotels.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/steps/test_search_hotels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LOGFILE.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/failures" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpt.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phptravels.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytests.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytestss.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests-hm.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests.log" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,11 +53,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/steps/test_search_hotels.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="29" />
+            <state relative-caret-position="97">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="e#0#60#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/report_log.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="-106160">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
             </state>
           </provider>
         </entry>
@@ -79,17 +87,10 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="144">
+                <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+              </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/failures">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7305">
-              <caret line="470" column="1" selection-start-line="470" selection-start-column="1" selection-end-line="470" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -104,15 +105,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/report_log.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="-86559">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Pipfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -150,10 +142,14 @@
       <find>Handler</find>
       <find>http</find>
       <find>scope</find>
+      <find>LOGS</find>
     </findStrings>
     <replaceStrings>
       <replace>logger.warning</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -225,12 +221,6 @@
               <item name="testSite" type="b2602c69:ProjectViewProjectNode" />
               <item name="testSite" type="47feb1d3:ProjectViewModuleNode" />
               <item name="testSite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testSite" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="testSite" type="462c0819:PsiDirectoryNode" />
-              <item name=".pytest_cache" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testSite" type="b2602c69:ProjectViewProjectNode" />
@@ -404,7 +394,7 @@
       <workItem from="1548449571387" duration="4541000" />
       <workItem from="1548656100022" duration="241000" />
       <workItem from="1548814645401" duration="873000" />
-      <workItem from="1548866426665" duration="2589000" />
+      <workItem from="1548866426665" duration="3693000" />
     </task>
     <task id="LOCAL-00001" summary="-first draft">
       <created>1546682094413</created>
@@ -422,7 +412,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="233552000" />
+    <option name="totallyTimeSpent" value="234656000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -449,7 +439,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003685" side_tool="true" weight="0.3299363" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003685" side_tool="true" visible="true" weight="0.32939634" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" weight="0.3299363" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32939634" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3299363" />
@@ -499,7 +489,6 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python_logging.log" />
     <entry file="file://$PROJECT_DIR$/ok.json" />
     <entry file="file://$PROJECT_DIR$/tests/page-objs/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -658,11 +647,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/page-objs/coreelement.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5203">
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-5203" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pytestss.log">
@@ -676,14 +661,6 @@
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="615">
           <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -727,47 +704,6 @@
     <entry file="file://$PROJECT_DIR$/.pytest_cache/v/cache/nodeids">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/failures">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7305">
-          <caret line="470" column="1" selection-start-line="470" selection-start-column="1" selection-end-line="470" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/steps/test_search_hotels.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/steps/test_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report_log.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-86559">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/steps/commons.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -788,6 +724,13 @@
     <entry file="file://$PROJECT_DIR$/report_Jan30_12-09.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/failures">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7305">
+          <caret line="470" column="1" selection-start-line="470" selection-start-column="1" selection-end-line="470" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Pipfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -795,5 +738,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/steps/commons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="144">
+            <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/steps/test_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/steps/test_search_hotels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runs.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report_log.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-106160">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.19751382" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
