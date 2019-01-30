@@ -1,0 +1,569 @@
+2019-01-09 23:46:08,194 - tests.conftest - DEBUG - ['request']
+2019-01-09 23:56:51,651 - tests.conftest - DEBUG - ['request']
+2019-01-10 00:03:29,494 - tests.conftest - DEBUG - ['password', 'email', 'request']
+2019-01-10 00:03:34,400 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 00:03:37,850 - tests.conftest - DEBUG - title is Login
+2019-01-10 00:03:44,080 - tests.conftest - DEBUG - ['request']
+2019-01-10 00:03:44,080 - tests.conftest - DEBUG - ['request']
+2019-01-10 00:06:12,063 - tests.conftest - DEBUG - _item : (['request'])
+2019-01-10 00:07:56,925 - tests.conftest - DEBUG - _item : (['request'])
+2019-01-10 00:09:34,315 - tests.conftest - DEBUG - _item : (['request'])
+2019-01-10 00:10:37,865 - tests.conftest - DEBUG - _item : (['request'])
+2019-01-10 00:12:51,517 - tests.conftest - DEBUG - _item : (['request'])
+2019-01-10 00:12:51,517 - tests.conftest - DEBUG - _item.funacrgs {'request': <FixtureRequest for <Function 'test_already_logged_in'>>}
+2019-01-10 00:16:13,574 - tests.conftest - DEBUG - _item : (['password', 'email', 'request'])
+2019-01-10 00:16:13,583 - tests.conftest - DEBUG - _item.funacrgs {'password': u'demouser', 'request': <FixtureRequest for <Function 'test_successful_login[user@phptravels.com-demouser]'>>, 'email': u'user@phptravels.com'}
+2019-01-10 00:16:18,474 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 00:16:20,967 - tests.conftest - DEBUG - title is Login
+2019-01-10 00:16:24,207 - tests.conftest - DEBUG - WDC.GET_TITLE is getTitle
+2019-01-10 00:16:24,233 - tests.conftest - DEBUG - _item : (['request'])
+2019-01-10 00:16:24,233 - tests.conftest - DEBUG - _item : (['request'])
+2019-01-10 00:16:24,234 - tests.conftest - DEBUG - _item.funacrgs {'request': <FixtureRequest for <Function 'test_unsuccessful_login'>>}
+2019-01-10 00:16:24,234 - tests.conftest - DEBUG - _item.funacrgs {'request': <FixtureRequest for <Function 'test_unsuccessful_login'>>}
+2019-01-10 00:20:28,445 - tests.conftest - DEBUG - _item : (['request'])
+2019-01-10 00:23:47,496 - tests.conftest - DEBUG - _item : (['request'])
+2019-01-10 00:23:47,505 - tests.conftest - DEBUG - _item.funacrgs 1d
+2019-01-10 00:24:39,445 - tests.conftest - DEBUG - _item : (['request'])
+2019-01-10 00:28:29,874 - tests.conftest - DEBUG - _item : (['password', 'email', 'request'])
+2019-01-10 00:36:08,129 - tests.conftest - DEBUG - _item : (['password', 'email', 'request'])
+2019-01-10 00:37:59,135 - tests.conftest - DEBUG - (<FixtureRequest for <Function 'test_successful_login[user@phptravels.com-demouser]'>>)
+2019-01-10 00:38:05,738 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 00:38:09,443 - tests.conftest - DEBUG - title is Login
+2019-01-10 00:38:12,706 - tests.conftest - DEBUG - (<FixtureRequest for <Function 'test_unsuccessful_login'>>)
+2019-01-10 00:38:12,706 - tests.conftest - DEBUG - (<FixtureRequest for <Function 'test_unsuccessful_login'>>)
+2019-01-10 00:40:40,587 - tests.conftest - DEBUG - (<FixtureRequest for <Function 'test_successful_login[user@phptravels.com-demouser]'>>)
+2019-01-10 00:40:45,465 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 00:40:48,228 - tests.conftest - DEBUG - title is Login
+2019-01-10 00:40:48,568 - tests.conftest - DEBUG - (<FixtureRequest for <Function 'test_unsuccessful_login'>>)
+2019-01-10 00:40:48,568 - tests.conftest - DEBUG - (<FixtureRequest for <Function 'test_unsuccessful_login'>>)
+2019-01-10 00:41:34,850 - tests.conftest - DEBUG - (<FixtureRequest for <Function 'test_successful_login[user@phptravels.com-demouser]'>>)
+2019-01-10 00:41:39,940 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 00:41:42,154 - tests.conftest - DEBUG - title is Login
+2019-01-10 00:41:42,391 - tests.conftest - INFO - inputcredts  None
+2019-01-10 00:41:48,422 - tests.conftest - DEBUG - (<FixtureRequest for <Function 'test_unsuccessful_login'>>)
+2019-01-10 00:41:48,422 - tests.conftest - DEBUG - (<FixtureRequest for <Function 'test_unsuccessful_login'>>)
+2019-01-10 00:50:54,838 - tests.conftest - DEBUG - HELLLLO (<FixtureRequest for <Function 'test_already_logged_in'>>)
+2019-01-10 01:03:54,334 - tests.conftest - DEBUG - HELLLLO (<bound method FixtureRequest.getfixturevalue of <FixtureRequest for <Function 'test_already_logged_in'>>>)
+2019-01-10 01:06:25,360 - tests.conftest - DEBUG - HELLLLO (['request'])
+2019-01-10 01:38:39,221 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 01:38:43,575 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 01:38:46,647 - tests.conftest - DEBUG - title is Login
+2019-01-10 01:38:46,960 - tests.conftest - INFO - inputcredts  None
+2019-01-10 01:38:56,579 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 01:38:56,579 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 01:38:57,272 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 01:38:57,272 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 01:38:57,272 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 01:44:17,783 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 01:44:22,153 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 01:44:24,621 - tests.conftest - DEBUG - title is Login
+2019-01-10 01:44:24,919 - tests.conftest - INFO - inputcredts  None
+2019-01-10 01:44:37,792 - tests.conftest - DEBUG - None
+2019-01-10 01:44:38,811 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 01:44:38,811 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 01:44:39,492 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 01:44:39,492 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 01:44:39,492 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 02:19:32,286 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='setup' outcome='passed'>
+2019-01-10 02:19:36,973 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 02:19:39,394 - tests.conftest - DEBUG - title is Login
+2019-01-10 02:19:39,607 - tests.conftest - INFO - inputcredts  None
+2019-01-10 02:19:42,627 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='call' outcome='passed'>
+2019-01-10 02:19:42,627 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='call' outcome='passed'>
+2019-01-10 02:19:43,289 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='teardown' outcome='passed'>
+2019-01-10 02:19:43,289 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='teardown' outcome='passed'>
+2019-01-10 02:19:43,289 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='teardown' outcome='passed'>
+2019-01-10 02:19:43,294 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 02:19:43,294 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 02:19:43,294 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 02:19:43,294 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 02:19:47,617 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 02:19:47,617 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 02:19:47,617 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 02:19:47,617 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 02:19:49,739 - tests.conftest - DEBUG - title is Login
+2019-01-10 02:19:49,739 - tests.conftest - DEBUG - title is Login
+2019-01-10 02:19:49,739 - tests.conftest - DEBUG - title is Login
+2019-01-10 02:19:49,739 - tests.conftest - DEBUG - title is Login
+2019-01-10 02:19:49,956 - tests.conftest - INFO - inputcredts  None
+2019-01-10 02:19:49,956 - tests.conftest - INFO - inputcredts  None
+2019-01-10 02:19:49,956 - tests.conftest - INFO - inputcredts  None
+2019-01-10 02:19:49,956 - tests.conftest - INFO - inputcredts  None
+2019-01-10 02:20:00,933 - tests.conftest - DEBUG - None
+2019-01-10 02:20:00,933 - tests.conftest - DEBUG - None
+2019-01-10 02:20:00,933 - tests.conftest - DEBUG - None
+2019-01-10 02:20:00,933 - tests.conftest - DEBUG - None
+2019-01-10 02:20:01,956 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 02:20:01,956 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 02:20:01,956 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 02:20:01,956 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 02:20:01,956 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 02:20:02,648 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 02:20:02,648 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 02:20:02,648 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 02:20:02,648 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 02:20:02,648 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 02:20:02,648 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 02:20:02,651 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 02:20:02,651 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 02:20:02,651 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 02:20:02,651 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 02:20:02,651 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 02:20:02,651 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 02:20:02,651 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 02:20:07,002 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 02:20:07,002 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 02:20:07,002 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 02:20:07,002 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 02:20:07,002 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 02:20:07,002 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 02:20:07,002 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 02:20:09,548 - tests.conftest - DEBUG - title is Login
+2019-01-10 02:20:09,548 - tests.conftest - DEBUG - title is Login
+2019-01-10 02:20:09,548 - tests.conftest - DEBUG - title is Login
+2019-01-10 02:20:09,548 - tests.conftest - DEBUG - title is Login
+2019-01-10 02:20:09,548 - tests.conftest - DEBUG - title is Login
+2019-01-10 02:20:09,548 - tests.conftest - DEBUG - title is Login
+2019-01-10 02:20:09,548 - tests.conftest - DEBUG - title is Login
+2019-01-10 02:20:09,797 - tests.conftest - INFO - inputcredts  None
+2019-01-10 02:20:09,797 - tests.conftest - INFO - inputcredts  None
+2019-01-10 02:20:09,797 - tests.conftest - INFO - inputcredts  None
+2019-01-10 02:20:09,797 - tests.conftest - INFO - inputcredts  None
+2019-01-10 02:20:09,797 - tests.conftest - INFO - inputcredts  None
+2019-01-10 02:20:09,797 - tests.conftest - INFO - inputcredts  None
+2019-01-10 02:20:09,797 - tests.conftest - INFO - inputcredts  None
+2019-01-10 02:20:15,846 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 02:20:15,846 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 02:20:15,846 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 02:20:15,846 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 02:20:15,846 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 02:20:15,846 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 02:20:15,846 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 02:20:15,846 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 02:20:16,617 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,617 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,617 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,617 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,617 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,617 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,617 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,617 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,617 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,621 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,621 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,621 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,621 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,621 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,621 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,621 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,621 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,621 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,621 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,656 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,656 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,656 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,656 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,656 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,656 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,656 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,656 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,656 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,656 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,656 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,661 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,661 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,661 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,661 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,661 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,661 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,661 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,661 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,661 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,661 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,661 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,661 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,669 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,669 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,669 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,669 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,669 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,669 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,669 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,669 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,669 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,669 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,669 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,669 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,669 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 02:20:16,698 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,698 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,698 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,698 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,698 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,698 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,698 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,698 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,698 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,698 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,698 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,698 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,698 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,698 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 02:20:16,703 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,703 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,703 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,703 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,703 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,703 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,703 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,703 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,703 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,703 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,703 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,703 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,703 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,703 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:20:16,703 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 02:49:19,469 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 02:49:24,662 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 02:49:27,761 - tests.conftest - DEBUG - title is Login
+2019-01-10 02:49:28,033 - tests.conftest - INFO - inputcredts  None
+2019-01-10 02:49:38,478 - tests.conftest - DEBUG - None
+2019-01-10 02:49:39,499 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 02:49:39,499 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 02:49:40,179 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 02:49:40,179 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 02:49:40,179 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:12:44,678 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='setup' outcome='passed'>
+2019-01-10 08:12:49,635 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:12:51,983 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:12:52,293 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:12:55,382 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='call' outcome='passed'>
+2019-01-10 08:12:55,382 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='call' outcome='passed'>
+2019-01-10 08:12:56,083 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='teardown' outcome='passed'>
+2019-01-10 08:12:56,083 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='teardown' outcome='passed'>
+2019-01-10 08:12:56,083 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='teardown' outcome='passed'>
+2019-01-10 08:12:56,085 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 08:12:56,085 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 08:12:56,085 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 08:12:56,085 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 08:13:00,403 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:13:00,403 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:13:00,403 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:13:00,403 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:13:02,779 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:13:02,779 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:13:02,779 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:13:02,779 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:13:02,989 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:13:02,989 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:13:02,989 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:13:02,989 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:13:15,109 - tests.conftest - DEBUG - None
+2019-01-10 08:13:15,109 - tests.conftest - DEBUG - None
+2019-01-10 08:13:15,109 - tests.conftest - DEBUG - None
+2019-01-10 08:13:15,109 - tests.conftest - DEBUG - None
+2019-01-10 08:13:16,132 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 08:13:16,132 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 08:13:16,132 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 08:13:16,132 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 08:13:16,132 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 08:13:16,857 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:13:16,857 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:13:16,857 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:13:16,857 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:13:16,857 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:13:16,857 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:13:16,861 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 08:13:16,861 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 08:13:16,861 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 08:13:16,861 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 08:13:16,861 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 08:13:16,861 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 08:13:16,861 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 08:13:21,067 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:13:21,067 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:13:21,067 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:13:21,067 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:13:21,067 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:13:21,067 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:13:21,067 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:13:24,168 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:13:24,168 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:13:24,168 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:13:24,168 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:13:24,168 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:13:24,168 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:13:24,168 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:13:24,407 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:13:24,407 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:13:24,407 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:13:24,407 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:13:24,407 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:13:24,407 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:13:24,407 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:13:30,439 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 08:13:30,439 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 08:13:30,439 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 08:13:30,439 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 08:13:30,439 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 08:13:30,439 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 08:13:30,439 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 08:13:30,439 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 08:13:31,142 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,142 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,142 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,142 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,142 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,142 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,142 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,142 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,142 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,147 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,147 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,147 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,147 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,147 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,147 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,147 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,147 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,147 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,147 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,176 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,176 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,176 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,176 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,176 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,176 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,176 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,176 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,176 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,176 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,176 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,185 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,185 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,185 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,185 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,185 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,185 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,185 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,185 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,185 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,185 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,185 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,185 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Paris-24/12/2018-25/12/2018-2 Adult 0 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='setup' outcome='passed'>
+2019-01-10 08:13:31,213 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,213 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,213 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,213 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,213 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,213 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,213 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,213 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,213 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,213 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,213 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,213 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,213 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,213 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='call' outcome='failed'>
+2019-01-10 08:13:31,220 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,220 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,220 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,220 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,220 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,220 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,220 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,220 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,220 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,220 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,220 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,220 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,220 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,220 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:13:31,220 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_search_hotels.py::test_a_list_of_hotel_is_displayed[Pune-01/01/2019-26/02/2019-1 Adult 1 Child]' when='teardown' outcome='passed'>
+2019-01-10 08:31:28,198 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 08:31:33,404 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:31:35,403 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:31:35,958 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:31:45,971 - tests.conftest - DEBUG - None
+2019-01-10 08:31:46,992 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 08:31:46,992 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 08:31:47,787 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:31:47,787 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:31:47,787 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:33:59,910 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 08:34:05,463 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:34:09,499 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:34:09,854 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:34:20,387 - tests.conftest - DEBUG - None
+2019-01-10 08:34:21,409 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 08:34:21,409 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 08:34:22,126 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:34:22,126 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:34:22,126 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:39:15,860 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 08:39:20,348 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:39:22,699 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:39:22,997 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:39:35,497 - tests.conftest - DEBUG - None
+2019-01-10 08:39:36,523 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 08:39:36,523 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 08:39:37,300 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:39:37,300 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:39:37,300 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:43:25,057 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 08:43:30,455 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:43:32,734 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:43:33,149 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:43:43,233 - tests.conftest - DEBUG - None
+2019-01-10 08:43:44,258 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 08:43:44,258 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 08:43:44,977 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:43:44,977 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:43:44,977 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:45:01,597 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 08:45:06,793 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 08:45:12,884 - tests.conftest - DEBUG - title is Login
+2019-01-10 08:45:13,181 - tests.conftest - INFO - inputcredts  None
+2019-01-10 08:45:24,660 - tests.conftest - DEBUG - None
+2019-01-10 08:45:25,690 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 08:45:25,690 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 08:45:26,528 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:45:26,528 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 08:45:26,528 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 09:15:25,169 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='setup' outcome='passed'>
+2019-01-10 09:15:30,551 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:15:32,886 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:15:33,191 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:15:36,222 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='call' outcome='passed'>
+2019-01-10 09:15:36,222 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='call' outcome='passed'>
+2019-01-10 09:15:36,992 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='teardown' outcome='passed'>
+2019-01-10 09:15:36,992 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='teardown' outcome='passed'>
+2019-01-10 09:15:36,992 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]' when='teardown' outcome='passed'>
+2019-01-10 09:15:36,996 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 09:15:36,996 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 09:15:36,996 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 09:15:36,996 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 09:15:43,165 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:15:43,165 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:15:43,165 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:15:43,165 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:15:46,130 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:15:46,130 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:15:46,130 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:15:46,130 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:15:46,458 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:15:46,458 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:15:46,458 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:15:46,458 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:15:56,809 - tests.conftest - DEBUG - None
+2019-01-10 09:15:56,809 - tests.conftest - DEBUG - None
+2019-01-10 09:15:56,809 - tests.conftest - DEBUG - None
+2019-01-10 09:15:56,809 - tests.conftest - DEBUG - None
+2019-01-10 09:15:57,844 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 09:15:57,844 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 09:15:57,844 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 09:15:57,844 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 09:15:57,844 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 09:15:58,682 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 09:15:58,682 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 09:15:58,682 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 09:15:58,682 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 09:15:58,682 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 09:15:58,682 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 09:15:58,687 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 09:15:58,687 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 09:15:58,687 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 09:15:58,687 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 09:15:58,687 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 09:15:58,687 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 09:15:58,687 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 09:16:03,747 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:16:03,747 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:16:03,747 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:16:03,747 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:16:03,747 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:16:03,747 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:16:03,747 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:16:06,062 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:16:06,062 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:16:06,062 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:16:06,062 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:16:06,062 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:16:06,062 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:16:06,062 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:16:06,395 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:16:06,395 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:16:06,395 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:16:06,395 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:16:06,395 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:16:06,395 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:16:06,395 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:16:12,433 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 09:16:12,433 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 09:16:12,433 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 09:16:12,433 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 09:16:12,433 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 09:16:12,433 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 09:16:12,433 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 09:16:12,433 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 09:16:13,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 09:16:13,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 09:16:13,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 09:16:13,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 09:16:13,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 09:16:13,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 09:16:13,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 09:16:13,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 09:16:13,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 09:17:58,943 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 09:18:04,560 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:18:06,812 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:18:07,239 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:18:19,055 - tests.conftest - DEBUG - None
+2019-01-10 09:18:20,086 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 09:18:20,086 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 09:18:21,016 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 09:18:21,016 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 09:18:21,016 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 09:20:07,337 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='setup' outcome='passed'>
+2019-01-10 09:20:11,791 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:20:14,054 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:20:14,298 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:20:25,141 - tests.conftest - DEBUG - None
+2019-01-10 09:20:26,165 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 09:20:26,165 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='call' outcome='passed'>
+2019-01-10 09:20:26,833 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 09:20:26,833 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 09:20:26,833 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_already_logged_in' when='teardown' outcome='passed'>
+2019-01-10 09:22:08,713 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 09:22:13,970 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:22:17,954 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:22:18,112 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:22:24,146 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 09:22:24,146 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 09:22:25,000 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 09:22:25,000 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 09:22:25,000 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 09:23:16,094 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='setup' outcome='passed'>
+2019-01-10 09:23:20,560 - tests.conftest - INFO - finished setting up the logging...
+2019-01-10 09:23:22,963 - tests.conftest - DEBUG - title is Login
+2019-01-10 09:23:23,150 - tests.conftest - INFO - inputcredts  None
+2019-01-10 09:23:29,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 09:23:29,188 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='call' outcome='passed'>
+2019-01-10 09:23:30,069 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 09:23:30,069 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>
+2019-01-10 09:23:30,069 - tests.conftest - DEBUG - rep : <TestReport 'tests/steps/test_login.py::test_unsuccessful_login' when='teardown' outcome='passed'>

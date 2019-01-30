@@ -6,8 +6,9 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-pytest = "*"
+pytest= "*"
 pytest-bdd = "*"
+pytest-html="*"
 requests = "*"
 selenium = "*"
 

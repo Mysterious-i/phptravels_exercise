@@ -1,0 +1,80 @@
+2019-01-14 12:24:19,691 - (conftest.py:82) - tests.conftest - INFO - __Finished setting up the logger at Mon Jan 14 12:24:18 2019___ -
+2019-01-14 12:24:29,689 - (conftest.py:58) - tests.conftest - INFO - ___current session id 2c08f03f-6394-c347-93b9-fa4a533602ab___ -
+2019-01-14 12:24:32,424 - (test_login.py:35) - tests.conftest - INFO - ___current title Login -
+2019-01-14 12:24:32,431 - (test_login.py:36) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-14 12:24:32,439 - (test_login.py:48) - tests.conftest - INFO - ___current title Login -
+2019-01-14 12:24:32,447 - (test_login.py:49) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-14 12:24:32,447 - (test_login.py:51) - tests.conftest - WARNING - _assuming user is logged in with the following credentials email:user@phptravels.com password:demouser -
+2019-01-14 12:24:32,506 - (test_login.py:147) - tests.conftest - INFO - Login authentication with email: user@phptravels.com  password: demouser -
+2019-01-14 12:24:32,676 - (test_login.py:151) - tests.conftest - DEBUG - <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="2c08f03f-6394-c347-93b9-fa4a533602ab", element="13973767-b519-c241-af68-d08d00e9f031")> elem -
+2019-01-14 12:24:32,868 - (test_login.py:159) - tests.conftest - INFO - Current time : Mon Jan 14 12:24:32 2019 -
+2019-01-14 12:24:35,869 - (test_login.py:161) - tests.conftest - INFO - we waited for 5 sec and now its : Mon Jan 14 12:24:35 2019 -
+2019-01-14 12:24:35,878 - (test_login.py:164) - tests.conftest - INFO - checking the url ...: https://www.phptravels.net/account/ -
+2019-01-14 12:24:35,883 - (test_login.py:53) - tests.conftest - DEBUG - current browser.title My Account -
+2019-01-14 12:24:35,894 - (test_login.py:86) - tests.conftest - INFO - current title My Account -
+2019-01-14 12:24:35,900 - (test_login.py:87) - tests.conftest - INFO - current url https://www.phptravels.net/account/ -
+2019-01-14 12:24:36,997 - (test_login.py:90) - tests.conftest - WARNING - should be redirecting to account_page https://www.phptravels.net/account -
+2019-01-14 12:24:37,021 - (test_login.py:105) - tests.conftest - INFO - current title My Account -
+2019-01-14 12:24:37,029 - (test_login.py:106) - tests.conftest - INFO - current url https://www.phptravels.net/account -
+2019-01-14 12:24:42,143 - (test_login.py:205) - tests.conftest - INFO - ___current title My Account -
+2019-01-14 12:24:42,163 - (test_login.py:206) - tests.conftest - INFO - ___current url https://www.phptravels.net/account -
+2019-01-14 12:27:16,813 - (conftest.py:%(lineno)s) - tests.conftest - INFO - __Finished setting up the logger at Mon Jan 14 12:27:15 2019___ -
+2019-01-14 12:27:23,827 - (conftest.py:%(lineno)s) - tests.conftest - INFO - ___current session id 0543e537-2d3a-6841-b6ea-11b4b2ae9355___ -
+2019-01-14 12:27:26,373 - (test_login.py:%(lineno)s) - tests.conftest - INFO - ___current title Login -
+2019-01-14 12:27:26,380 - (test_login.py:%(lineno)s) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-14 12:27:26,394 - (test_login.py:%(lineno)s) - tests.conftest - INFO - ___current title Login -
+2019-01-14 12:27:26,401 - (test_login.py:%(lineno)s) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-14 12:27:26,402 - (test_login.py:%(lineno)s) - tests.conftest - WARNING - _assuming user is logged in with the following credentials email:user@phptravels.com password:demouser -
+2019-01-14 12:27:26,445 - (test_login.py:%(lineno)s) - tests.conftest - INFO - Login authentication with email: user@phptravels.com  password: demouser -
+2019-01-14 12:27:26,631 - (test_login.py:%(lineno)s) - tests.conftest - DEBUG - <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="0543e537-2d3a-6841-b6ea-11b4b2ae9355", element="6e4ba22d-0346-be4f-9fc4-6dc591c28620")> elem -
+2019-01-14 12:27:26,773 - (test_login.py:%(lineno)s) - tests.conftest - INFO - Current time : Mon Jan 14 12:27:26 2019 -
+2019-01-14 12:27:29,777 - (test_login.py:%(lineno)s) - tests.conftest - INFO - we waited for 5 sec and now its : Mon Jan 14 12:27:29 2019 -
+2019-01-14 12:27:29,785 - (test_login.py:%(lineno)s) - tests.conftest - INFO - checking the url ...: https://www.phptravels.net/account/ -
+2019-01-14 12:27:29,797 - (test_login.py:%(lineno)s) - tests.conftest - DEBUG - current browser.title My Account -
+2019-01-14 12:27:29,809 - (test_login.py:%(lineno)s) - tests.conftest - INFO - current title My Account -
+2019-01-14 12:27:29,818 - (test_login.py:%(lineno)s) - tests.conftest - INFO - current url https://www.phptravels.net/account/ -
+2019-01-14 12:27:30,814 - (test_login.py:%(lineno)s) - tests.conftest - WARNING - should be redirecting to account_page https://www.phptravels.net/account -
+2019-01-14 12:27:30,830 - (test_login.py:%(lineno)s) - tests.conftest - INFO - current title My Account -
+2019-01-14 12:27:30,836 - (test_login.py:%(lineno)s) - tests.conftest - INFO - current url https://www.phptravels.net/account -
+2019-01-14 12:27:35,822 - (test_login.py:%(lineno)s) - tests.conftest - INFO - ___current title My Account -
+2019-01-14 12:27:35,833 - (test_login.py:%(lineno)s) - tests.conftest - INFO - ___current url https://www.phptravels.net/account -
+2019-01-14 12:27:59,816 - (conftest.py: report_logger 82) - tests.conftest - INFO - __Finished setting up the logger at Mon Jan 14 12:27:58 2019___ -
+2019-01-14 12:28:07,991 - (conftest.py: browser 58) - tests.conftest - INFO - ___current session id 346e3786-7b07-8c4a-afc5-81a70a849670___ -
+2019-01-14 12:28:10,041 - (test_login.py: login_page 35) - tests.conftest - INFO - ___current title Login -
+2019-01-14 12:28:10,051 - (test_login.py: login_page 36) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-14 12:28:10,063 - (test_login.py: logged_in 48) - tests.conftest - INFO - ___current title Login -
+2019-01-14 12:28:10,071 - (test_login.py: logged_in 49) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-14 12:28:10,072 - (test_login.py: logged_in 51) - tests.conftest - WARNING - _assuming user is logged in with the following credentials email:user@phptravels.com password:demouser -
+2019-01-14 12:28:10,104 - (test_login.py: input_credts 147) - tests.conftest - INFO - Login authentication with email: user@phptravels.com  password: demouser -
+2019-01-14 12:28:10,280 - (test_login.py: input_credts 151) - tests.conftest - DEBUG - <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="346e3786-7b07-8c4a-afc5-81a70a849670", element="dcd95fb1-d726-b748-bf08-f706e2972960")> elem -
+2019-01-14 12:28:10,489 - (test_login.py: input_credts 159) - tests.conftest - INFO - Current time : Mon Jan 14 12:28:10 2019 -
+2019-01-14 12:28:13,490 - (test_login.py: input_credts 161) - tests.conftest - INFO - we waited for 5 sec and now its : Mon Jan 14 12:28:13 2019 -
+2019-01-14 12:28:13,497 - (test_login.py: input_credts 164) - tests.conftest - INFO - checking the url ...: https://www.phptravels.net/account/ -
+2019-01-14 12:28:13,505 - (test_login.py: logged_in 53) - tests.conftest - DEBUG - current browser.title My Account -
+2019-01-14 12:28:13,515 - (test_login.py: afn 86) - tests.conftest - INFO - current title My Account -
+2019-01-14 12:28:13,521 - (test_login.py: afn 87) - tests.conftest - INFO - current url https://www.phptravels.net/account/ -
+2019-01-14 12:28:14,401 - (test_login.py: afn 90) - tests.conftest - WARNING - should be redirecting to account_page https://www.phptravels.net/account -
+2019-01-14 12:28:14,418 - (test_login.py: back_home 105) - tests.conftest - INFO - current title My Account -
+2019-01-14 12:28:14,424 - (test_login.py: back_home 106) - tests.conftest - INFO - current url https://www.phptravels.net/account -
+2019-01-14 12:28:19,079 - (test_login.py: redirected_to_acc 205) - tests.conftest - INFO - ___current title My Account -
+2019-01-14 12:28:19,086 - (test_login.py: redirected_to_acc 206) - tests.conftest - INFO - ___current url https://www.phptravels.net/account -
+2019-01-14 12:29:07,848 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Mon Jan 14 12:29:06 2019___ -
+2019-01-14 12:29:15,442 - (logged from conftest.py:browser:58) - tests.conftest - INFO - ___current session id 23820bff-5001-0941-aecd-2178bcbdb85a___ -
+2019-01-14 12:29:17,806 - (logged from test_login.py:login_page:35) - tests.conftest - INFO - ___current title Login -
+2019-01-14 12:29:17,822 - (logged from test_login.py:login_page:36) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-14 12:29:17,830 - (logged from test_login.py:logged_in:48) - tests.conftest - INFO - ___current title Login -
+2019-01-14 12:29:17,837 - (logged from test_login.py:logged_in:49) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-14 12:29:17,838 - (logged from test_login.py:logged_in:51) - tests.conftest - WARNING - _assuming user is logged in with the following credentials email:user@phptravels.com password:demouser -
+2019-01-14 12:29:17,874 - (logged from test_login.py:input_credts:147) - tests.conftest - INFO - Login authentication with email: user@phptravels.com  password: demouser -
+2019-01-14 12:29:18,010 - (logged from test_login.py:input_credts:151) - tests.conftest - DEBUG - <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="23820bff-5001-0941-aecd-2178bcbdb85a", element="965a5904-eeb4-5940-a7ce-a6320eede6b0")> elem -
+2019-01-14 12:29:18,136 - (logged from test_login.py:input_credts:159) - tests.conftest - INFO - Current time : Mon Jan 14 12:29:18 2019 -
+2019-01-14 12:29:21,140 - (logged from test_login.py:input_credts:161) - tests.conftest - INFO - we waited for 5 sec and now its : Mon Jan 14 12:29:21 2019 -
+2019-01-14 12:29:21,149 - (logged from test_login.py:input_credts:164) - tests.conftest - INFO - checking the url ...: https://www.phptravels.net/account/ -
+2019-01-14 12:29:21,156 - (logged from test_login.py:logged_in:53) - tests.conftest - DEBUG - current browser.title My Account -
+2019-01-14 12:29:21,168 - (logged from test_login.py:afn:86) - tests.conftest - INFO - current title My Account -
+2019-01-14 12:29:21,173 - (logged from test_login.py:afn:87) - tests.conftest - INFO - current url https://www.phptravels.net/account/ -
+2019-01-14 12:29:22,061 - (logged from test_login.py:afn:90) - tests.conftest - WARNING - should be redirecting to account_page https://www.phptravels.net/account -
+2019-01-14 12:29:22,077 - (logged from test_login.py:back_home:105) - tests.conftest - INFO - current title My Account -
+2019-01-14 12:29:22,085 - (logged from test_login.py:back_home:106) - tests.conftest - INFO - current url https://www.phptravels.net/account -
+2019-01-14 12:29:28,896 - (logged from test_login.py:redirected_to_acc:205) - tests.conftest - INFO - ___current title My Account -
+2019-01-14 12:29:28,905 - (logged from test_login.py:redirected_to_acc:206) - tests.conftest - INFO - ___current url https://www.phptravels.net/account -

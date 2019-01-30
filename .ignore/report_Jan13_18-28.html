@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Test Report</title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/></head>
+  <body onLoad="init()">
+    <script>/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+function toArray(iter) {
+    if (iter === null) {
+        return null;
+    }
+    return Array.prototype.slice.call(iter);
+}
+
+function find(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return elem.querySelector(selector);
+}
+
+function find_all(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return toArray(elem.querySelectorAll(selector));
+}
+
+function sort_column(elem) {
+    toggle_sort_states(elem);
+    var colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
+    var key;
+    if (elem.classList.contains('numeric')) {
+        key = key_num;
+    } else if (elem.classList.contains('result')) {
+        key = key_result;
+    } else {
+        key = key_alpha;
+    }
+    sort_table(elem, key(colIndex));
+}
+
+function show_all_extras() {
+    find_all('.col-result').forEach(show_extras);
+}
+
+function hide_all_extras() {
+    find_all('.col-result').forEach(hide_extras);
+}
+
+function show_extras(colresult_elem) {
+    var extras = colresult_elem.parentNode.nextElementSibling;
+    var expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.remove("collapsed");
+    expandcollapse.classList.remove("expander");
+    expandcollapse.classList.add("collapser");
+}
+
+function hide_extras(colresult_elem) {
+    var extras = colresult_elem.parentNode.nextElementSibling;
+    var expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.add("collapsed");
+    expandcollapse.classList.remove("collapser");
+    expandcollapse.classList.add("expander");
+}
+
+function show_filters() {
+    var filter_items = document.getElementsByClassName('filter');
+    for (var i = 0; i < filter_items.length; i++)
+        filter_items[i].hidden = false;
+}
+
+function add_collapse() {
+    // Add links for show/hide all
+    var resulttable = find('table#results-table');
+    var showhideall = document.createElement("p");
+    showhideall.innerHTML = '<a href="javascript:show_all_extras()">Show all details</a> / ' +
+                            '<a href="javascript:hide_all_extras()">Hide all details</a>';
+    resulttable.parentElement.insertBefore(showhideall, resulttable);
+
+    // Add show/hide link to each result
+    find_all('.col-result').forEach(function(elem) {
+        var collapsed = get_query_parameter('collapsed') || 'Passed';
+        var extras = elem.parentNode.nextElementSibling;
+        var expandcollapse = document.createElement("span");
+        if (collapsed.includes(elem.innerHTML)) {
+            extras.classList.add("collapsed");
+            expandcollapse.classList.add("expander");
+        } else {
+            expandcollapse.classList.add("collapser");
+        }
+        elem.appendChild(expandcollapse);
+
+        elem.addEventListener("click", function(event) {
+            if (event.currentTarget.parentNode.nextElementSibling.classList.contains("collapsed")) {
+                show_extras(event.currentTarget);
+            } else {
+                hide_extras(event.currentTarget);
+            }
+        });
+    })
+}
+
+function get_query_parameter(name) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function init () {
+    reset_sort_headers();
+
+    add_collapse();
+
+    show_filters();
+
+    toggle_sort_states(find('.initial-sort'));
+
+    find_all('.sortable').forEach(function(elem) {
+        elem.addEventListener("click",
+                              function(event) {
+                                  sort_column(elem);
+                              }, false)
+    });
+
+};
+
+function sort_table(clicked, key_func) {
+    var rows = find_all('.results-table-row');
+    var reversed = !clicked.classList.contains('asc');
+    var sorted_rows = sort(rows, key_func, reversed);
+    /* Whole table is removed here because browsers acts much slower
+     * when appending existing elements.
+     */
+    var thead = document.getElementById("results-table-head");
+    document.getElementById('results-table').remove();
+    var parent = document.createElement("table");
+    parent.id = "results-table";
+    parent.appendChild(thead);
+    sorted_rows.forEach(function(elem) {
+        parent.appendChild(elem);
+    });
+    document.getElementsByTagName("BODY")[0].appendChild(parent);
+}
+
+function sort(items, key_func, reversed) {
+    var sort_array = items.map(function(item, i) {
+        return [key_func(item), i];
+    });
+    var multiplier = reversed ? -1 : 1;
+
+    sort_array.sort(function(a, b) {
+        var key_a = a[0];
+        var key_b = b[0];
+        return multiplier * (key_a >= key_b ? 1 : -1);
+    });
+
+    return sort_array.map(function(item) {
+        var index = item[1];
+        return items[index];
+    });
+}
+
+function key_alpha(col_index) {
+    return function(elem) {
+        return elem.childNodes[1].childNodes[col_index].firstChild.data.toLowerCase();
+    };
+}
+
+function key_num(col_index) {
+    return function(elem) {
+        return parseFloat(elem.childNodes[1].childNodes[col_index].firstChild.data);
+    };
+}
+
+function key_result(col_index) {
+    return function(elem) {
+        var strings = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed',
+                       'Skipped', 'Passed'];
+        return strings.indexOf(elem.childNodes[1].childNodes[col_index].firstChild.data);
+    };
+}
+
+function reset_sort_headers() {
+    find_all('.sort-icon').forEach(function(elem) {
+        elem.parentNode.removeChild(elem);
+    });
+    find_all('.sortable').forEach(function(elem) {
+        var icon = document.createElement("div");
+        icon.className = "sort-icon";
+        icon.textContent = "vvv";
+        elem.insertBefore(icon, elem.firstChild);
+        elem.classList.remove("desc", "active");
+        elem.classList.add("asc", "inactive");
+    });
+}
+
+function toggle_sort_states(elem) {
+    //if active, toggle between asc and desc
+    if (elem.classList.contains('active')) {
+        elem.classList.toggle('asc');
+        elem.classList.toggle('desc');
+    }
+
+    //if inactive, reset all other functions and add ascending active
+    if (elem.classList.contains('inactive')) {
+        reset_sort_headers();
+        elem.classList.remove('inactive');
+        elem.classList.add('active');
+    }
+}
+
+function is_all_rows_hidden(value) {
+  return value.hidden == false;
+}
+
+function filter_table(elem) {
+    var outcome_att = "data-test-result";
+    var outcome = elem.getAttribute(outcome_att);
+    class_outcome = outcome + " results-table-row";
+    var outcome_rows = document.getElementsByClassName(class_outcome);
+
+    for(var i = 0; i < outcome_rows.length; i++){
+        outcome_rows[i].hidden = !elem.checked;
+    }
+
+    var rows = find_all('.results-table-row').filter(is_all_rows_hidden);
+    var all_rows_hidden = rows.length == 0 ? true : false;
+    var not_found_message = document.getElementById("not-found-message");
+    not_found_message.hidden = !all_rows_hidden;
+}
+</script>
+    <h1>report_Jan13_18-28.html</h1>
+    <p>Report generated on 13-Jan-2019 at 18:28:35 by<a href="https://pypi.python.org/pypi/pytest-html"> pytest-html</a> v1.19.0</p>
+    <h2>Environment</h2>
+    <table id="environment">
+      <tr>
+        <td>Packages</td>
+        <td>{&apos;py&apos;: &apos;1.7.0&apos;, &apos;pytest&apos;: &apos;4.0.2&apos;, &apos;pluggy&apos;: &apos;0.8.0&apos;}</td></tr>
+      <tr>
+        <td>Platform</td>
+        <td>Darwin-18.2.0-x86_64-i386-64bit</td></tr>
+      <tr>
+        <td>Plugins</td>
+        <td>{&apos;bdd&apos;: &apos;3.0.1&apos;, &apos;cov&apos;: &apos;2.6.0&apos;, &apos;xdist&apos;: &apos;1.25.0&apos;, &apos;html&apos;: &apos;1.19.0&apos;, &apos;forked&apos;: &apos;0.2&apos;, &apos;metadata&apos;: &apos;1.8.0&apos;}</td></tr>
+      <tr>
+        <td>Python</td>
+        <td>2.7.15</td></tr></table>
+    <h2>Summary</h2>
+    <p>1 tests ran in 8.71 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <h2>Results</h2>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable result initial-sort" col="result">Result</th>
+          <th class="sortable" col="name">Test</th>
+          <th class="sortable numeric" col="duration">Duration</th>
+          <th>Links</th></tr>
+        <tr hidden="true" id="not-found-message">
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">tests/steps/test_login.py::test_successful_login[user@phptravels.com-demouser]</td>
+          <td class="col-duration">7.73</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">password = 'demouser', email = 'user@phptravels.com', request = &lt;FixtureRequest for &lt;Function 'test_successful_login[user@phptravels.com-demouser]'&gt;&gt;<br/><br/>    input_credts(browser,CREDENTIALS['valid'].get('email'),CREDENTIALS['valid'].get('password'), report_logger)<br/>&gt;   report_logger.debug("current browser.title %s" % browser.title)<br/><br/>email      = 'user@phptravels.com'<br/>password   = 'demouser'<br/>request    = &lt;FixtureRequest for &lt;Function 'test_successful_login[user@phptravels.com-demouser]'&gt;&gt;<br/><br/>tests/steps/test_login.py:41: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>../../Library/Python/2.7/lib/python/site-packages/pytest_bdd/scenario.py:162: in _execute_scenario<br/>    step_func = _find_step_function(request, step, scenario, encoding=encoding)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>request = &lt;FixtureRequest for &lt;Function 'test_successful_login[user@phptravels.com-demouser]'&gt;&gt;, step = &lt;pytest_bdd.feature.Step object at 0x10a437dd0&gt;<br/>scenario = &lt;pytest_bdd.feature.Scenario object at 0x10a437d50&gt;, encoding = 'utf-8'<br/><br/>    def _find_step_function(request, step, scenario, encoding):<br/>        """Match the step defined by the regular expression pattern.<br/>    <br/>        :param request: PyTest request object.<br/>        :param step: Step.<br/>        :param scenario: Scenario.<br/>    <br/>        :return: Function of the step.<br/>        :rtype: function<br/>        """<br/>        name = step.name<br/>        try:<br/>            return get_fixture_value(request, get_step_fixture_name(name, step.type, encoding))<br/>        except pytest_fixtures.FixtureLookupError:<br/>            try:<br/>                name = find_argumented_step_fixture_name(name, step.type, request._fixturemanager, request)<br/>                if name:<br/>                    return get_fixture_value(request, name)<br/>                raise<br/>            except pytest_fixtures.FixtureLookupError:<br/>                raise exceptions.StepDefinitionNotFoundError(<br/>                    u"""Step definition is not found: {step}."""<br/>                    """ Line {step.line_number} in scenario "{scenario.name}" in the feature "{feature.filename}""".format(<br/>                        step=step,<br/>                        scenario=scenario,<br/>&gt;                       feature=scenario.feature,<br/>                    )<br/>                )<br/><span class="error">E               StepDefinitionNotFoundError: Step definition is not found: When "I input &lt;email&gt; and &lt;password&gt;#TODO: change this to refelect the use of commons". Line 14 in scenario "Successful Login" in the feature "/Users/neev/PycharmProjects/testSite/tests/features/login.feature</span><br/><br/>encoding   = 'utf-8'<br/>name       = None<br/>request    = &lt;FixtureRequest for &lt;Function 'test_successful_login[user@phptravels.com-demouser]'&gt;&gt;<br/>scenario   = &lt;pytest_bdd.feature.Scenario object at 0x10a437d50&gt;<br/>step       = &lt;pytest_bdd.feature.Step object at 0x10a437dd0&gt;<br/><br/>../../Library/Python/2.7/lib/python/site-packages/pytest_bdd/scenario.py:104: StepDefinitionNotFoundError<br/>----------------------------- Captured stdout call -----------------------------<br/>__Finished setting up the logging...
+___current session id 6f1ae49e-e485-984f-b1a0-6126de2ad42e___
+___current title 
+___current url https://www.phptravels.net/en/login
+----------------------------- Captured stderr call -----------------------------<br/>Traceback (most recent call last):
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/logging/__init__.py", line 868, in emit
+    msg = self.format(record)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/logging/__init__.py", line 741, in format
+    return fmt.format(record)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/logging/__init__.py", line 469, in format
+    s = self._fmt % record.__dict__
+ValueError: unsupported format character '(' (0x28) at index 36
+Logged from file conftest.py, line 72
+Traceback (most recent call last):
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/logging/__init__.py", line 868, in emit
+    msg = self.format(record)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/logging/__init__.py", line 741, in format
+    return fmt.format(record)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/logging/__init__.py", line 469, in format
+    s = self._fmt % record.__dict__
+ValueError: unsupported format character '(' (0x28) at index 36
+Logged from file conftest.py, line 48
+Traceback (most recent call last):
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/logging/__init__.py", line 868, in emit
+    msg = self.format(record)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/logging/__init__.py", line 741, in format
+    return fmt.format(record)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/logging/__init__.py", line 469, in format
+    s = self._fmt % record.__dict__
+ValueError: unsupported format character '(' (0x28) at index 36
+Logged from file test_login.py, line 28
+Traceback (most recent call last):
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/logging/__init__.py", line 868, in emit
+    msg = self.format(record)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/logging/__init__.py", line 741, in format
+    return fmt.format(record)
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/logging/__init__.py", line 469, in format
+    s = self._fmt % record.__dict__
+ValueError: unsupported format character '(' (0x28) at index 36
+Logged from file test_login.py, line 29
+------------------------------ Captured log call -------------------------------<br/>conftest.py                 72 INFO     __Finished setting up the logging...
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:49601/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox"}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "marionette": true}}
+connectionpool.py          205 DEBUG    Starting new HTTP connection (1): 127.0.0.1:49601
+connectionpool.py          393 DEBUG    http://127.0.0.1:49601 "POST /session HTTP/1.1" 200 585
+remote_connection.py       440 DEBUG    Finished Request
+conftest.py                 48 INFO     ___current session id 6f1ae49e-e485-984f-b1a0-6126de2ad42e___
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:49601/session/6f1ae49e-e485-984f-b1a0-6126de2ad42e/url {"url": "https://www.phptravels.net/en/login"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:49601 "POST /session/6f1ae49e-e485-984f-b1a0-6126de2ad42e/url HTTP/1.1" 200 14
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:49601/session/6f1ae49e-e485-984f-b1a0-6126de2ad42e/title {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:49601 "GET /session/6f1ae49e-e485-984f-b1a0-6126de2ad42e/title HTTP/1.1" 200 12
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py               28 INFO     ___current title 
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:49601/session/6f1ae49e-e485-984f-b1a0-6126de2ad42e/url {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:49601 "GET /session/6f1ae49e-e485-984f-b1a0-6126de2ad42e/url HTTP/1.1" 200 47
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py               29 INFO     ___current url https://www.phptravels.net/en/login</div></td></tr></tbody></table></body></html>

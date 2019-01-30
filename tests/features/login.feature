@@ -1,65 +1,42 @@
 @login
 # Created by neev at 2018-12-21
 Feature: Login
-  As an anonymous  user
-  I want to login
-  So that I see my account page
+  As a registered user
+  I want to be able to login,
+  So that I can see my account page
 
   Background:
-    Given a web browser is on the "home_page"
-    And the user selects the "Login" option from the "My Account" menu
-
-#  @successful
-#  \Scenario Outline: Successful Login
-# \   When I input <email> and <password>
-#   \ Then I should be redirected to my Account page
-#    \Examples:
-#     \ | email | password |
-#      \| user@phptravels.com | demouser |
+    Given the phptravels Login page is displayed
+#TODO: change this to refelect the use of commons
+# successful/authenticated : Happy Paths
   @successful
-  Scenario: successful login
-    When  a web browser is on the "login_page"
-    And   the user fills in the "email" field with a <registered_email_address>
-    And   the user enters the "password"
-    Then  the webpage reloads successfully to the "account page"
+  Scenario Outline: Successful Login
+    When I input <email> and <password>
+    Then I should be redirected to my "account_page"
+    Examples:
+      | email | password |
+      | user@phptravels.com | demouser |
+
+#TODO seperate logout scenario to a seperate feature file
+  @logout
+  Scenario: Logout successful
+    Given I am logged in
+    And I am an authenticated user in the "account_page"
+    When I select the Logout option
+    Then I should not be able to access my "account_page"
 
 
   @authenticated
-  Scenario: already logged in
-    Given the user is logged in
-    Then  the webpage reloads successfully to the "account page"
-
-  @authenticated
-  Scenario:
-    Given the user is logged in
-    And   I am an authenticated user in the Home page
+  Scenario: Already logged in
+    Given I am logged in
+    And   I am an authenticated user in the "home_page"
     When  I select the Login option from the My Account drop down
-    Then  I should be redirected to my Account Page
-# empty email/password field
+    Then  I should be redirected to my "account_page"
+
+# unsuccessful : Edge Cases
   @unsuccessful
-  Scenario: Unsuccessful Login
+  Scenario: Unsuccessful login
     When I input incorrect email or password
     Then I should see the Login page with a warning message
 
-  # Error messages for the email field
-  #___________________________________
-  # Please include an '@' in the email address
-  # Please enter a part following '@' <entered_email> is incomplete
-  # a part followed by '@' should not contain the symbol <symbol> \\space punctuations such as: "(),:;<>@[\]
-  # a part following '@' should not contain the symbol <symbol>
 
-
-  # error_message : '.' is used at  a wrong position in <entered_email>
-  # domain part of the email address ends with '.'
-
-  # '@'is followed '.'
-
-#Please enter an email address
-  # hyphen -, the first or last character after in the domain part.
-  # each label in the series of labels concatenated with dots to make up the hostname must be from 1 to 63 characters
-    # domain part of the email address contains '..'
-    # hostname made of labels of length => 64
-
-
-
-  #
