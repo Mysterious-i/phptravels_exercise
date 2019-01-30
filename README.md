@@ -37,10 +37,8 @@ Page: http://www.phptravels.net Email: user@phptravels.com Password: demouser
             eg.https://www.phptravels.net/m-hotels displays a different name in the account dropdown
             
 ---
-![img1] (https://github.com/Neev-tm/phptravels_exercise/blob/master/screenshots/ss1.png "screenshot 1")
-
-
-![img2] (https://github.com/Neev-tm/phptravels_exercise/blob/master/screenshots/ss2.png "screenshot 2")
+![ss1](phptravels_exercise/screenshots/ss1.png "screenshot 1")
+![ss2](phptravels_exercise/screenshots/ss2.png "screenshot 2")
 
 ---
 
