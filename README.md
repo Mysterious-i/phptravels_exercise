@@ -29,18 +29,16 @@ Page: http://www.phptravels.net Email: user@phptravels.com Password: demouser
 ## Exercise 3:
 
 > Discuss what could be implemented on the application side to make the website more resilient, and if and how these improvements can be tested.
-    
-    
-    many current functionalities are not resilient against edge cases
-        - The Login/Sign up forms do not account for email address validity
-        - Once logged in, regardless of the user's name, different paths within the site display inconsistent text in the My Account element
+
+many current functionalities are not resilient against edge cases
+- The Login/Sign up forms do not account for email address validity
+- Once logged in, regardless of the user's name, different paths within the site display inconsistent text in the My Account element
             eg.https://www.phptravels.net/m-hotels displays a different name in the account dropdown
             
----
-![ss1](phptravels_exercise/screenshots/ss1.png "screenshot 1")
-![ss2](phptravels_exercise/screenshots/ss2.png "screenshot 2")
+            
+ ![ss1](screenshots/ss1.png "screenshot 1")
+ ![ss2](screenshots/ss2.png "screenshot 2")
 
----
 
 ## Exercise 4:
 
