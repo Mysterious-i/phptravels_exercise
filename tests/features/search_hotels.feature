@@ -4,10 +4,14 @@ Feature: Search for Hotels
   As an authenticated user
   I want to be able to input a given city,date, and family size
   So I can see a list of hotels matching my query
+  # I prefer to have _ As an anonymous user _
+  # since for a search query one is not required to be logged in
+  # and I use the word authenticated for a logged in user
+
 
   # Enter feature description here
   Background:
-    Given I am an authenticated user in the "hotels_page"
+    Given The user is in the "hotels_page"
 
   @successful
   Scenario Outline: A list of hotel is displayed

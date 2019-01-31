@@ -49,6 +49,16 @@ We could
 
 > Take a look around the website and list and justify three happy paths that we could test to ensure some more core functionalities of our application are working, and for each one, list two edge cases that could be tested. Choose one of the happy paths and implement it and its edge cases.
 
+
+| :smiley:   | :confused:              |
+|------------|-------------------------|
+| Happy Path | Negative Path/Edge Case |
+
+| User semantics |                                                                 |
+|----------------|------------------------------------------------------------------------------------------------------------------------------|
+| Authenticated  | A user who is logged in, implies registered user                                                                             |
+| Anonymous      | A user who is not logged in, could be registered or not                                                                      |
+| Existing       | A user who has previously registered with valid credentials (ie.email: xxx is in the database), does not imply authenticated |
 ### Chosen Functionality Scenarios:
 
 

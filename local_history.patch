@@ -1,0 +1,16 @@
+Index: tests/conftest.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- tests/conftest.py	(date 1548893279000)
++++ tests/conftest.py	(date 1548893279000)
+@@ -118,7 +118,7 @@
+     setattr(item, "REPORT_" + rep.when, rep)
+     # we only look at actual test calls, not setup/teardown
+     if rep.when == "call":
+-        mode = "a" if os.path.exists("failures") else "w"
++        mode = "a" if os.path.exists("runs.txt") else "w"
+         with open("runs.txt", mode) as f:
+             # let's also access a fixture for the fun of it
+ 

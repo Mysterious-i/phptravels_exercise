@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f72185d-aea8-48d3-ace3-a2cb93933787" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.cache/pytest_status" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/pytest_status" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" beforeDir="false" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LOGS.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/report_log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/runs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/features/search_hotels.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/features/search_hotels.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/steps/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/steps/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/steps/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/steps/test_search_hotels.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/steps/test_search_hotels.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,43 +35,70 @@
     <SUITE FILE_PATH="coverage/testSite$commons.coverage" NAME="commons Coverage Results" MODIFIED="1548866501016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/steps" />
   </component>
   <component name="DockManager">
-    <window id="1">
+    <window id="3">
       <content type="file-editors">
         <state>
-          <leaf>
-            <file pinned="true" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/tests/conftest.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="702">
-                    <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-                    <folding>
-                      <element signature="e#64#78#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/README.md">
-                <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                  <state split_layout="SPLIT">
-                    <first_editor relative-caret-position="151">
-                      <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-                    </first_editor>
-                    <second_editor />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
+          <splitter split-orientation="horizontal" split-proportion="0.48177084">
+            <split-first>
+              <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+                <file pinned="false" current-in-tab="false">
+                  <entry file="file://$PROJECT_DIR$/tests/features/login.feature">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state>
+                        <caret column="6" selection-start-column="6" selection-end-column="6" />
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+                <file pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/tests/features/search_hotels.feature">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="504">
+                        <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+                <file pinned="false" current-in-tab="false">
+                  <entry file="file://$PROJECT_DIR$/tests/features/password_recovery.feature">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state>
+                        <caret column="31" selection-start-column="31" selection-end-column="31" />
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-first>
+            <split-second>
+              <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+                <file pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/tests/steps/test_login.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="216">
+                        <caret line="12" selection-start-line="12" selection-end-line="12" />
+                        <folding>
+                          <element signature="e#0#10#0" expanded="true" />
+                        </folding>
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+                <file pinned="false" current-in-tab="false">
+                  <entry file="file://$PROJECT_DIR$/tests/steps/test_search_hotels.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="-2204">
+                        <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+                        <folding>
+                          <element signature="e#0#60#0" expanded="true" />
+                        </folding>
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-second>
+          </splitter>
         </state>
       </content>
     </window>
@@ -63,52 +106,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/steps/test_search_hotels.py">
+        <entry file="file://$PROJECT_DIR$/pytest.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#60#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="198">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/report_log.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="364">
-              <caret line="5998" selection-start-line="5998" selection-end-line="5998" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/steps/test_login.py">
+      <file pinned="true" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/conftest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/steps/commons.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+            <state relative-caret-position="108">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Pipfile">
+        <entry file="file://$PROJECT_DIR$/tests/steps/password_recovery.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="36">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              <folding>
+                <element signature="e#0#60#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,8 +140,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Gherkin feature file" />
         <option value="Python Script" />
+        <option value="Gherkin feature file" />
+        <option value="Setup Script" />
       </list>
     </option>
   </component>
@@ -143,6 +166,8 @@
       <find>http</find>
       <find>scope</find>
       <find>LOGS</find>
+      <find>failed_login</find>
+      <find>logout</find>
     </findStrings>
     <replaceStrings>
       <replace>logger.warning</replace>
@@ -177,17 +202,24 @@
         <option value="$PROJECT_DIR$/tests/page-objs/base-page.py" />
         <option value="$PROJECT_DIR$/tests/pytest.ini" />
         <option value="$PROJECT_DIR$/Pipfile.lock" />
-        <option value="$PROJECT_DIR$/tests/__init__.py" />
         <option value="$PROJECT_DIR$/.cache/pytest_status" />
-        <option value="$PROJECT_DIR$/tests/features/search_hotels.feature" />
-        <option value="$PROJECT_DIR$/tests/steps/test_search_hotels.py" />
-        <option value="$PROJECT_DIR$/tests/steps/test_login.py" />
-        <option value="$PROJECT_DIR$/pytest.ini" />
-        <option value="$PROJECT_DIR$/tests/steps/commons.py" />
-        <option value="$PROJECT_DIR$/tests/features/login.feature" />
         <option value="$PROJECT_DIR$/Pipfile" />
-        <option value="$PROJECT_DIR$/tests/conftest.py" />
+        <option value="$PROJECT_DIR$/pytest.ini" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/tests/features/password_retrieval.feature" />
+        <option value="$PROJECT_DIR$/tests/steps/test_search_hotels.py" />
+        <option value="$PROJECT_DIR$/tests/features/search_hotels.feature" />
+        <option value="$PROJECT_DIR$/tests/steps/commons.py" />
+        <option value="$PROJECT_DIR$/tests/steps/test_login.py" />
+        <option value="$PROJECT_DIR$/tests/features/parametrized.feature" />
+        <option value="$PROJECT_DIR$/tests/steps/test_parametrized.py" />
+        <option value="$PROJECT_DIR$/tests/features/login.feature" />
+        <option value="$PROJECT_DIR$/tests/features/password_recovery.feature" />
+        <option value="$PROJECT_DIR$/tests/__init__.py" />
+        <option value="$PROJECT_DIR$/tests/conftest.py" />
+        <option value="$PROJECT_DIR$/tests/steps/__init__.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/tests/steps/password_recovery.py" />
       </list>
     </option>
   </component>
@@ -200,7 +232,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="41" />
     <option name="y" value="23" />
-    <option name="width" value="699" />
+    <option name="width" value="1399" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -226,11 +258,13 @@
             <path>
               <item name="testSite" type="b2602c69:ProjectViewProjectNode" />
               <item name="testSite" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="webdrivers" type="462c0819:PsiDirectoryNode" />
+              <item name="testSite" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="testSite" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="webdrivers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -362,8 +396,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.Login" />
-      <item itemvalue="Python tests.pytest in /Users/neev/PycharmProjects/testSite/tests/steps/test_web.py" />
       <item itemvalue="Python.commons" />
+      <item itemvalue="Python tests.pytest in /Users/neev/PycharmProjects/testSite/tests/steps/test_web.py" />
     </list>
     <recent_temporary>
       <list>
@@ -395,7 +429,9 @@
       <workItem from="1548449571387" duration="4541000" />
       <workItem from="1548656100022" duration="241000" />
       <workItem from="1548814645401" duration="873000" />
-      <workItem from="1548866426665" duration="16797000" />
+      <workItem from="1548866426665" duration="42595000" />
+      <workItem from="1548919776335" duration="123000" />
+      <workItem from="1548943783720" duration="2670000" />
     </task>
     <task id="LOCAL-00001" summary="-first draft">
       <created>1546682094413</created>
@@ -413,7 +449,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247760000" />
+    <option name="totallyTimeSpent" value="276351000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -428,20 +464,20 @@
     <frame x="41" y="23" width="1399" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" x="564" y="206" width="352" height="511" id="Project" order="0" type="WINDOWED" visible="true" weight="0.25939572" />
+      <window_info active="true" content_ui="combo" x="127" y="149" width="267" height="704" id="Project" order="0" visible="true" weight="0.2358143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49963155" weight="0.32953367" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49963155" weight="0.32939634" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.339895" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299363" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49963155" weight="0.32939634" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003685" side_tool="true" visible="true" weight="0.32939634" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003685" side_tool="true" weight="0.32939634" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" weight="0.3299363" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32939634" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3299363" />
@@ -455,26 +491,26 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14517318" />
+      <window_info active="true" content_ui="combo" x="127" y="149" width="267" height="704" id="Project" order="0" visible="true" weight="0.2358143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Autodoc" order="0" weight="0.32939634" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49963155" weight="0.32953367" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.34012738" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.3299363" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5003685" side_tool="true" weight="0.3299363" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" weight="0.3299363" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32939634" />
-      <window_info anchor="bottom" id="Python Console" order="14" weight="0.3299363" />
-      <window_info anchor="bottom" id="Messages" order="15" />
-      <window_info anchor="bottom" id="Inspection Results" order="16" weight="0.32611465" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49963155" weight="0.32939634" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.339895" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3299363" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49963155" weight="0.32939634" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003685" side_tool="true" weight="0.32939634" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" weight="0.3299363" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32939634" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.3299363" />
+      <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32611465" />
+      <window_info anchor="bottom" id="Autodoc" order="16" weight="0.32939634" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -485,51 +521,52 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-first draft" />
     <option name="LAST_COMMIT_MESSAGE" value="-first draft" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ok.json" />
-    <entry file="file://$PROJECT_DIR$/tests/page-objs/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/steps/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/page-objs/page.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/selenium/webdriver/support/expected_conditions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="360" column="8" selection-start-line="360" selection-start-column="8" selection-end-line="360" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/selenium/webdriver/remote/switch_to.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-655">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/pytest_bdd/steps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="141" column="59" selection-start-line="141" selection-start-column="59" selection-end-line="141" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.3/python_stubs/-2131660280/__builtin__.py" />
-    <entry file="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/selenium/webdriver/firefox/options.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1218">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/selenium/webdriver/remote/command.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -544,27 +581,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="1246">
-          <caret line="424" selection-start-line="424" selection-end-line="424" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_log.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-15">
-          <caret line="45" column="80" selection-start-line="45" selection-start-column="80" selection-end-line="45" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpt.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="265">
-          <caret line="4398" column="71" selection-start-line="4398" selection-start-column="71" selection-end-line="4398" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests.log" />
+    <entry file="file://$PROJECT_DIR$/test_log.log" />
+    <entry file="file://$PROJECT_DIR$/phpt.log" />
     <entry file="file:///opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/logging/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-19311">
@@ -598,43 +617,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LOGFILE.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="435">
-          <caret line="82" selection-start-line="82" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/LOGFILE.log" />
     <entry file="file://$PROJECT_DIR$/LOGS.log -a" />
-    <entry file="file://$PROJECT_DIR$/LOGS.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-10725" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests-hm.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="18">
-          <caret line="534" column="22" selection-start-line="534" selection-start-column="22" selection-end-line="534" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests-hm.log" />
     <entry file="file://$PROJECT_DIR$/report_logs.log" />
-    <entry file="file://$PROJECT_DIR$/reports.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report_Jan14_13-38.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phptravels.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="543">
-          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reports.html" />
+    <entry file="file://$PROJECT_DIR$/report_Jan14_13-38.html" />
+    <entry file="file://$PROJECT_DIR$/phptravels.log" />
     <entry file="file://$PROJECT_DIR$/geckodriver.log">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="-130477">
@@ -647,48 +636,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/page-objs/coreelement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5203" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytestss.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="18">
-          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytests.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="615">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/page-objs/coreelement.py" />
+    <entry file="file://$PROJECT_DIR$/pytestss.log" />
+    <entry file="file://$PROJECT_DIR$/pytests.log" />
     <entry file="file://$PROJECT_DIR$/Pipfile.lock">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytest.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/features/login.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/features/search_hotels.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.cache/pytest_status">
       <provider selected="true" editor-type-id="text-editor" />
@@ -713,63 +665,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report_Jan30_12-09.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/failures">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7305">
-          <caret line="470" column="1" selection-start-line="470" selection-start-column="1" selection-end-line="470" selection-end-column="1" />
+    <entry file="file://$PROJECT_DIR$/report_Jan30_12-09.html" />
+    <entry file="file://$PROJECT_DIR$/failures" />
+    <entry file="uml://Python/#/Users/neev/PycharmProjects/testSite/tests">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Python</ID>
+          <OriginalElement>#/Users/neev/PycharmProjects/testSite/tests</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="576.0" y="230.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/steps/commons.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+    <entry file="uml://JavaScript-modules-diagram//Users/neev/PycharmProjects/testSite/tests">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/tests</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="576.0" y="230.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runs.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report_log.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="364">
-          <caret line="5998" selection-start-line="5998" selection-end-line="5998" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/steps/test_search_hotels.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/steps/test_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/conftest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-          <folding>
-            <element signature="e#64#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/LOGS.log" />
     <entry file="file://$PROJECT_DIR$/Pipfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -777,13 +708,131 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/report_log.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="107964">
+          <caret line="5998" selection-start-line="5998" selection-end-line="5998" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/features/login.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="151">
-            <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+          <first_editor relative-caret-position="662">
+            <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runs.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/features/password_recovery.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/features/parametrized.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/features/search_hotels.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/steps/test_parametrized.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/steps/commons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/steps/test_search_hotels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2204">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_temp.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/steps/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/steps/test_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytest.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/steps/password_recovery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

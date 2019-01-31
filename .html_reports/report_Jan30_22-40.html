@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Test Report</title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/></head>
+  <body onLoad="init()">
+    <script>/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+function toArray(iter) {
+    if (iter === null) {
+        return null;
+    }
+    return Array.prototype.slice.call(iter);
+}
+
+function find(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return elem.querySelector(selector);
+}
+
+function find_all(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return toArray(elem.querySelectorAll(selector));
+}
+
+function sort_column(elem) {
+    toggle_sort_states(elem);
+    var colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
+    var key;
+    if (elem.classList.contains('numeric')) {
+        key = key_num;
+    } else if (elem.classList.contains('result')) {
+        key = key_result;
+    } else {
+        key = key_alpha;
+    }
+    sort_table(elem, key(colIndex));
+}
+
+function show_all_extras() {
+    find_all('.col-result').forEach(show_extras);
+}
+
+function hide_all_extras() {
+    find_all('.col-result').forEach(hide_extras);
+}
+
+function show_extras(colresult_elem) {
+    var extras = colresult_elem.parentNode.nextElementSibling;
+    var expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.remove("collapsed");
+    expandcollapse.classList.remove("expander");
+    expandcollapse.classList.add("collapser");
+}
+
+function hide_extras(colresult_elem) {
+    var extras = colresult_elem.parentNode.nextElementSibling;
+    var expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.add("collapsed");
+    expandcollapse.classList.remove("collapser");
+    expandcollapse.classList.add("expander");
+}
+
+function show_filters() {
+    var filter_items = document.getElementsByClassName('filter');
+    for (var i = 0; i < filter_items.length; i++)
+        filter_items[i].hidden = false;
+}
+
+function add_collapse() {
+    // Add links for show/hide all
+    var resulttable = find('table#results-table');
+    var showhideall = document.createElement("p");
+    showhideall.innerHTML = '<a href="javascript:show_all_extras()">Show all details</a> / ' +
+                            '<a href="javascript:hide_all_extras()">Hide all details</a>';
+    resulttable.parentElement.insertBefore(showhideall, resulttable);
+
+    // Add show/hide link to each result
+    find_all('.col-result').forEach(function(elem) {
+        var collapsed = get_query_parameter('collapsed') || 'Passed';
+        var extras = elem.parentNode.nextElementSibling;
+        var expandcollapse = document.createElement("span");
+        if (collapsed.includes(elem.innerHTML)) {
+            extras.classList.add("collapsed");
+            expandcollapse.classList.add("expander");
+        } else {
+            expandcollapse.classList.add("collapser");
+        }
+        elem.appendChild(expandcollapse);
+
+        elem.addEventListener("click", function(event) {
+            if (event.currentTarget.parentNode.nextElementSibling.classList.contains("collapsed")) {
+                show_extras(event.currentTarget);
+            } else {
+                hide_extras(event.currentTarget);
+            }
+        });
+    })
+}
+
+function get_query_parameter(name) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function init () {
+    reset_sort_headers();
+
+    add_collapse();
+
+    show_filters();
+
+    toggle_sort_states(find('.initial-sort'));
+
+    find_all('.sortable').forEach(function(elem) {
+        elem.addEventListener("click",
+                              function(event) {
+                                  sort_column(elem);
+                              }, false)
+    });
+
+};
+
+function sort_table(clicked, key_func) {
+    var rows = find_all('.results-table-row');
+    var reversed = !clicked.classList.contains('asc');
+    var sorted_rows = sort(rows, key_func, reversed);
+    /* Whole table is removed here because browsers acts much slower
+     * when appending existing elements.
+     */
+    var thead = document.getElementById("results-table-head");
+    document.getElementById('results-table').remove();
+    var parent = document.createElement("table");
+    parent.id = "results-table";
+    parent.appendChild(thead);
+    sorted_rows.forEach(function(elem) {
+        parent.appendChild(elem);
+    });
+    document.getElementsByTagName("BODY")[0].appendChild(parent);
+}
+
+function sort(items, key_func, reversed) {
+    var sort_array = items.map(function(item, i) {
+        return [key_func(item), i];
+    });
+    var multiplier = reversed ? -1 : 1;
+
+    sort_array.sort(function(a, b) {
+        var key_a = a[0];
+        var key_b = b[0];
+        return multiplier * (key_a >= key_b ? 1 : -1);
+    });
+
+    return sort_array.map(function(item) {
+        var index = item[1];
+        return items[index];
+    });
+}
+
+function key_alpha(col_index) {
+    return function(elem) {
+        return elem.childNodes[1].childNodes[col_index].firstChild.data.toLowerCase();
+    };
+}
+
+function key_num(col_index) {
+    return function(elem) {
+        return parseFloat(elem.childNodes[1].childNodes[col_index].firstChild.data);
+    };
+}
+
+function key_result(col_index) {
+    return function(elem) {
+        var strings = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed',
+                       'Skipped', 'Passed'];
+        return strings.indexOf(elem.childNodes[1].childNodes[col_index].firstChild.data);
+    };
+}
+
+function reset_sort_headers() {
+    find_all('.sort-icon').forEach(function(elem) {
+        elem.parentNode.removeChild(elem);
+    });
+    find_all('.sortable').forEach(function(elem) {
+        var icon = document.createElement("div");
+        icon.className = "sort-icon";
+        icon.textContent = "vvv";
+        elem.insertBefore(icon, elem.firstChild);
+        elem.classList.remove("desc", "active");
+        elem.classList.add("asc", "inactive");
+    });
+}
+
+function toggle_sort_states(elem) {
+    //if active, toggle between asc and desc
+    if (elem.classList.contains('active')) {
+        elem.classList.toggle('asc');
+        elem.classList.toggle('desc');
+    }
+
+    //if inactive, reset all other functions and add ascending active
+    if (elem.classList.contains('inactive')) {
+        reset_sort_headers();
+        elem.classList.remove('inactive');
+        elem.classList.add('active');
+    }
+}
+
+function is_all_rows_hidden(value) {
+  return value.hidden == false;
+}
+
+function filter_table(elem) {
+    var outcome_att = "data-test-result";
+    var outcome = elem.getAttribute(outcome_att);
+    class_outcome = outcome + " results-table-row";
+    var outcome_rows = document.getElementsByClassName(class_outcome);
+
+    for(var i = 0; i < outcome_rows.length; i++){
+        outcome_rows[i].hidden = !elem.checked;
+    }
+
+    var rows = find_all('.results-table-row').filter(is_all_rows_hidden);
+    var all_rows_hidden = rows.length == 0 ? true : false;
+    var not_found_message = document.getElementById("not-found-message");
+    not_found_message.hidden = !all_rows_hidden;
+}
+</script>
+    <h1>report_Jan30_22-40.html</h1>
+    <p>Report generated on 30-Jan-2019 at 22:40:57 by<a href="https://pypi.python.org/pypi/pytest-html"> pytest-html</a> v1.19.0</p>
+    <h2>Environment</h2>
+    <table id="environment">
+      <tr>
+        <td>Packages</td>
+        <td>{&apos;py&apos;: &apos;1.7.0&apos;, &apos;pytest&apos;: &apos;4.0.2&apos;, &apos;pluggy&apos;: &apos;0.8.0&apos;}</td></tr>
+      <tr>
+        <td>Platform</td>
+        <td>Darwin-18.2.0-x86_64-i386-64bit</td></tr>
+      <tr>
+        <td>Plugins</td>
+        <td>{&apos;bdd&apos;: &apos;3.0.1&apos;, &apos;cov&apos;: &apos;2.6.0&apos;, &apos;xdist&apos;: &apos;1.25.0&apos;, &apos;html&apos;: &apos;1.19.0&apos;, &apos;forked&apos;: &apos;0.2&apos;, &apos;metadata&apos;: &apos;1.8.0&apos;}</td></tr>
+      <tr>
+        <td>Python</td>
+        <td>2.7.15</td></tr></table>
+    <h2>Summary</h2>
+    <p>1 tests ran in 17.93 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <h2>Results</h2>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable result initial-sort" col="result">Result</th>
+          <th class="sortable" col="name">Test</th>
+          <th class="sortable numeric" col="duration">Duration</th>
+          <th>Links</th></tr>
+        <tr hidden="true" id="not-found-message">
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">tests/steps/test_login.py::test_logout_successful</td>
+          <td class="col-duration">16.79</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">request = &lt;FixtureRequest for &lt;Function 'test_logout_successful'&gt;&gt;<br/><br/>    browser:<br/>&gt;   report_logger:<br/><br/>request    = &lt;FixtureRequest for &lt;Function 'test_logout_successful'&gt;&gt;<br/><br/>tests/steps/test_login.py:45: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>../../Library/Python/2.7/lib/python/site-packages/pytest_bdd/scenario.py:194: in _execute_scenario<br/>    _execute_step_function(request, scenario, step, step_func)<br/>../../Library/Python/2.7/lib/python/site-packages/pytest_bdd/scenario.py:136: in _execute_step_function<br/>    step_func(**kwargs)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>browser = &lt;selenium.webdriver.firefox.webdriver.WebDriver (session="45d9b607-de0a-e141-8215-91c68351c4b2")&gt;, report_logger = &lt;logging.Logger object at 0x109e93b50&gt;<br/>account_page = '"account_page"'<br/><br/>    @then(parsers.parse("the user should not be able to access the {account_page}"))<br/>    def logged_out(browser, report_logger, account_page):<br/>        """<br/>        Args:<br/>            browser:<br/>            report_logger:<br/>            account_page:<br/>        """<br/>        report_logger.info("___current title %s" % browser.title)<br/>        report_logger.info("___current url %s" % browser.current_url)<br/>    <br/>        req = request(browser)<br/>        response = req.get(get_page_url('my_account_path'))<br/>        report_logger.debug("_requested_status_code %d" % response.status_code)<br/>&gt;       assert get_page_url('login_path') in browser.current_url<br/><span class="error">E       assert 'https://www.phptravels.net/login' in 'https://www.phptravels.net/en'</span><br/><span class="error">E        +  where 'https://www.phptravels.net/login' = get_page_url('login_path')</span><br/><span class="error">E        +  and   'https://www.phptravels.net/en' = &lt;selenium.webdriver.firefox.webdriver.WebDriver (session="45d9b607-de0a-e141-8215-91c68351c4b2")&gt;.current_url</span><br/><br/>account_page = '"account_page"'<br/>browser    = &lt;selenium.webdriver.firefox.webdriver.WebDriver (session="45d9b607-de0a-e141-8215-91c68351c4b2")&gt;<br/>report_logger = &lt;logging.Logger object at 0x109e93b50&gt;<br/>req        = &lt;requests.sessions.Session object at 0x109ee8e10&gt;<br/>response   = &lt;Response [200]&gt;<br/><br/>tests/steps/test_login.py:255: AssertionError<br/>----------------------------- Captured stdout call -----------------------------<br/>2019-01-30 22:40:40,152 - (logged from conftest.py:report_logger:83) - tests.conftest - INFO - __Finished setting up the logger at Wed Jan 30 22:40:39 2019___ -
+2019-01-30 22:40:44,729 - (logged from conftest.py:browser:56) - tests.conftest - INFO - ___current session id 45d9b607-de0a-e141-8215-91c68351c4b2___ -
+2019-01-30 22:40:47,114 - (logged from test_login.py:display_login_page:34) - tests.conftest - INFO - ___current title Login -
+2019-01-30 22:40:47,129 - (logged from test_login.py:display_login_page:35) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 22:40:47,130 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "the user is logged in"** -
+2019-01-30 22:40:47,143 - (logged from test_login.py:log_in:47) - tests.conftest - INFO - ___current title Login -
+2019-01-30 22:40:47,149 - (logged from test_login.py:log_in:48) - tests.conftest - INFO - ___current url https://www.phptravels.net/login -
+2019-01-30 22:40:47,151 - (logged from test_login.py:log_in:50) - tests.conftest - WARNING - _assuming user is logged in with the following credentials email:user@phptravels.com password:demouser -
+2019-01-30 22:40:47,193 - (logged from test_login.py:input_credts:145) - tests.conftest - INFO - Login authentication with email: user@phptravels.com  password: demouser -
+2019-01-30 22:40:47,372 - (logged from test_login.py:input_credts:149) - tests.conftest - DEBUG - &lt;selenium.webdriver.firefox.webelement.FirefoxWebElement (session="45d9b607-de0a-e141-8215-91c68351c4b2", element="f2c1be6a-eb95-044b-880d-56ecfb0267d4")&gt; elem -
+2019-01-30 22:40:47,551 - (logged from test_login.py:input_credts:157) - tests.conftest - INFO - Current time : Wed Jan 30 22:40:47 2019 -
+2019-01-30 22:40:50,555 - (logged from test_login.py:input_credts:159) - tests.conftest - INFO - we waited for 5 sec and now its : Wed Jan 30 22:40:50 2019 -
+2019-01-30 22:40:50,568 - (logged from test_login.py:input_credts:162) - tests.conftest - INFO - checking the url ...: https://www.phptravels.net/account/ -
+2019-01-30 22:40:50,573 - (logged from test_login.py:log_in:52) - tests.conftest - DEBUG - current browser.title My Account -
+2019-01-30 22:40:50,574 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Given "there is an authenticated user in the "account_page""** -
+2019-01-30 22:40:52,810 - (logged from test_login.py:after_login:70) - tests.conftest - DEBUG - https://www.phptravels.net/en -
+2019-01-30 22:40:52,813 - (logged from test_login.py:after_login:71) - tests.conftest - WARNING - should be redirecting back to home page -
+2019-01-30 22:40:52,814 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **When "the user selects to logout"** -
+2019-01-30 22:40:52,815 - (logged from test_login.py:logout:217) - tests.conftest - INFO - ___attempting to logout.. -
+2019-01-30 22:40:56,095 - (logged from test_login.py:logout:233) - tests.conftest - ERROR - EXCEPTION raised: -
+Traceback (most recent call last):
+  File "/Users/neev/PycharmProjects/testSite/tests/steps/test_login.py", line 222, in logout
+    EC.element_located_to_be_selected((By.XPATH, ELEMENT_LOCATORS['myaccount_dd_menu']))).select()
+  File "/Users/neev/Library/Python/2.7/lib/python/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+TimeoutException: Message: 
+
+2019-01-30 22:40:56,112 - (logged from test_login.py:logout:235) - tests.conftest - INFO - ___current title PHPTRAVELS | Travel Technology Partner -
+2019-01-30 22:40:56,118 - (logged from test_login.py:logout:236) - tests.conftest - INFO - ___current url https://www.phptravels.net/en -
+2019-01-30 22:40:56,119 - (logged from test_login.py:logout:237) - tests.conftest - WARNING - ___logging out... -
+2019-01-30 22:40:56,120 - (logged from conftest.py:pytest_bdd_before_step:91) - tests.conftest - INFO - **Then "the user should not be able to access the "account_page""** -
+2019-01-30 22:40:56,128 - (logged from test_login.py:logged_out:249) - tests.conftest - INFO - ___current title PHPTRAVELS | Travel Technology Partner -
+2019-01-30 22:40:56,133 - (logged from test_login.py:logged_out:250) - tests.conftest - INFO - ___current url https://www.phptravels.net/en -
+2019-01-30 22:40:56,917 - (logged from test_login.py:logged_out:254) - tests.conftest - DEBUG - _requested_status_code 200 -
+----------------------------- Captured stderr call -----------------------------<br/>https://www.phptravels.net/login
+logged in 
+------------------------------ Captured log call -------------------------------<br/>conftest.py                 91 INFO     **Given "the phptravels "login_page" is displayed"**
+conftest.py                 83 INFO     __Finished setting up the logger at Wed Jan 30 22:40:39 2019___
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:54331/session {"capabilities": {"alwaysMatch": {"acceptInsecureCerts": true, "browserName": "firefox", "moz:firefoxOptions": {"log": {"level": "trace"}}}, "firstMatch": [{}]}, "desiredCapabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "moz:firefoxOptions": {"log": {"level": "trace"}}, "marionette": true}}
+connectionpool.py          205 DEBUG    Starting new HTTP connection (1): 127.0.0.1:54331
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "POST /session HTTP/1.1" 200 585
+remote_connection.py       440 DEBUG    Finished Request
+conftest.py                 56 INFO     ___current session id 45d9b607-de0a-e141-8215-91c68351c4b2___
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/url {"url": "https://www.phptravels.net/login"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "POST /session/45d9b607-de0a-e141-8215-91c68351c4b2/url HTTP/1.1" 200 14
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/title {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/title HTTP/1.1" 200 17
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py               34 INFO     ___current title Login
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/url {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/url HTTP/1.1" 200 44
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py               35 INFO     ___current url https://www.phptravels.net/login
+conftest.py                 91 INFO     **Given "the user is logged in"**
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/title {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/title HTTP/1.1" 200 17
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py               47 INFO     ___current title Login
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/url {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/url HTTP/1.1" 200 44
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py               48 INFO     ___current url https://www.phptravels.net/login
+test_login.py               50 WARNING  _assuming user is logged in with the following credentials email:user@phptravels.com password:demouser
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/source {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/source HTTP/1.1" 200 70315
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/url {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/url HTTP/1.1" 200 44
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py              145 INFO     Login authentication with email: user@phptravels.com  password: demouser
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element {"using": "xpath", "value": "//input[@name='username']"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "POST /session/45d9b607-de0a-e141-8215-91c68351c4b2/element HTTP/1.1" 200 88
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element/fa913026-da6d-8345-a65f-ca47fdb2ac4d/value {"text": "user@phptravels.com", "id": "fa913026-da6d-8345-a65f-ca47fdb2ac4d", "value": ["u", "s", "e", "r", "@", "p", "h", "p", "t", "r", "a", "v", "e", "l", "s", ".", "c", "o", "m"]}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "POST /session/45d9b607-de0a-e141-8215-91c68351c4b2/element/fa913026-da6d-8345-a65f-ca47fdb2ac4d/value HTTP/1.1" 200 14
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element {"using": "xpath", "value": "//input[@name='password']"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "POST /session/45d9b607-de0a-e141-8215-91c68351c4b2/element HTTP/1.1" 200 88
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py              149 DEBUG    &lt;selenium.webdriver.firefox.webelement.FirefoxWebElement (session="45d9b607-de0a-e141-8215-91c68351c4b2", element="f2c1be6a-eb95-044b-880d-56ecfb0267d4")&gt; elem
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element/f2c1be6a-eb95-044b-880d-56ecfb0267d4/value {"text": "demouser", "id": "f2c1be6a-eb95-044b-880d-56ecfb0267d4", "value": ["d", "e", "m", "o", "u", "s", "e", "r"]}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "POST /session/45d9b607-de0a-e141-8215-91c68351c4b2/element/f2c1be6a-eb95-044b-880d-56ecfb0267d4/value HTTP/1.1" 200 14
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element/f2c1be6a-eb95-044b-880d-56ecfb0267d4/value {"text": "\ue006", "id": "f2c1be6a-eb95-044b-880d-56ecfb0267d4", "value": ["\ue006"]}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "POST /session/45d9b607-de0a-e141-8215-91c68351c4b2/element/f2c1be6a-eb95-044b-880d-56ecfb0267d4/value HTTP/1.1" 200 14
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py              157 INFO     Current time : Wed Jan 30 22:40:47 2019
+test_login.py              159 INFO     we waited for 5 sec and now its : Wed Jan 30 22:40:50 2019
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/url {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/url HTTP/1.1" 200 47
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py              162 INFO     checking the url ...: https://www.phptravels.net/account/
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/title {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/title HTTP/1.1" 200 22
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py               52 DEBUG    current browser.title My Account
+conftest.py                 91 INFO     **Given "there is an authenticated user in the "account_page""**
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/url {"url": "https://www.phptravels.net/en"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "POST /session/45d9b607-de0a-e141-8215-91c68351c4b2/url HTTP/1.1" 200 14
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/url {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/url HTTP/1.1" 200 41
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py               70 DEBUG    https://www.phptravels.net/en
+test_login.py               71 WARNING  should be redirecting back to home page
+conftest.py                 91 INFO     **When "the user selects to logout"**
+test_login.py              217 INFO     ___attempting to logout..
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element {"using": "xpath", "value": "/html/body/nav/div/div[2]/ul[2]/ul/li[1]/a"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "POST /session/45d9b607-de0a-e141-8215-91c68351c4b2/element HTTP/1.1" 200 88
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element/dff78f35-606f-fc4d-9866-5daf5ab511b0/selected {"id": "dff78f35-606f-fc4d-9866-5daf5ab511b0"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/element/dff78f35-606f-fc4d-9866-5daf5ab511b0/selected HTTP/1.1" 200 15
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element {"using": "xpath", "value": "/html/body/nav/div/div[2]/ul[2]/ul/li[1]/a"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "POST /session/45d9b607-de0a-e141-8215-91c68351c4b2/element HTTP/1.1" 200 88
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element/dff78f35-606f-fc4d-9866-5daf5ab511b0/selected {"id": "dff78f35-606f-fc4d-9866-5daf5ab511b0"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/element/dff78f35-606f-fc4d-9866-5daf5ab511b0/selected HTTP/1.1" 200 15
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element {"using": "xpath", "value": "/html/body/nav/div/div[2]/ul[2]/ul/li[1]/a"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "POST /session/45d9b607-de0a-e141-8215-91c68351c4b2/element HTTP/1.1" 200 88
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element/dff78f35-606f-fc4d-9866-5daf5ab511b0/selected {"id": "dff78f35-606f-fc4d-9866-5daf5ab511b0"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/element/dff78f35-606f-fc4d-9866-5daf5ab511b0/selected HTTP/1.1" 200 15
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element {"using": "xpath", "value": "/html/body/nav/div/div[2]/ul[2]/ul/li[1]/a"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "POST /session/45d9b607-de0a-e141-8215-91c68351c4b2/element HTTP/1.1" 200 88
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element/dff78f35-606f-fc4d-9866-5daf5ab511b0/selected {"id": "dff78f35-606f-fc4d-9866-5daf5ab511b0"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/element/dff78f35-606f-fc4d-9866-5daf5ab511b0/selected HTTP/1.1" 200 15
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element {"using": "xpath", "value": "/html/body/nav/div/div[2]/ul[2]/ul/li[1]/a"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "POST /session/45d9b607-de0a-e141-8215-91c68351c4b2/element HTTP/1.1" 200 88
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element/dff78f35-606f-fc4d-9866-5daf5ab511b0/selected {"id": "dff78f35-606f-fc4d-9866-5daf5ab511b0"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/element/dff78f35-606f-fc4d-9866-5daf5ab511b0/selected HTTP/1.1" 200 15
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    POST http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element {"using": "xpath", "value": "/html/body/nav/div/div[2]/ul[2]/ul/li[1]/a"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "POST /session/45d9b607-de0a-e141-8215-91c68351c4b2/element HTTP/1.1" 200 88
+remote_connection.py       440 DEBUG    Finished Request
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/element/dff78f35-606f-fc4d-9866-5daf5ab511b0/selected {"id": "dff78f35-606f-fc4d-9866-5daf5ab511b0"}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/element/dff78f35-606f-fc4d-9866-5daf5ab511b0/selected HTTP/1.1" 200 15
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py              233 ERROR    EXCEPTION raised:
+Traceback (most recent call last):
+  File "/Users/neev/PycharmProjects/testSite/tests/steps/test_login.py", line 222, in logout
+    EC.element_located_to_be_selected((By.XPATH, ELEMENT_LOCATORS['myaccount_dd_menu']))).select()
+  File "/Users/neev/Library/Python/2.7/lib/python/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+TimeoutException: Message: 
+
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/title {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/title HTTP/1.1" 200 50
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py              235 INFO     ___current title PHPTRAVELS | Travel Technology Partner
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/url {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/url HTTP/1.1" 200 41
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py              236 INFO     ___current url https://www.phptravels.net/en
+test_login.py              237 WARNING  ___logging out...
+conftest.py                 91 INFO     **Then "the user should not be able to access the "account_page""**
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/title {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/title HTTP/1.1" 200 50
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py              249 INFO     ___current title PHPTRAVELS | Travel Technology Partner
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/url {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/url HTTP/1.1" 200 41
+remote_connection.py       440 DEBUG    Finished Request
+test_login.py              250 INFO     ___current url https://www.phptravels.net/en
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/cookie {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/cookie HTTP/1.1" 200 148
+remote_connection.py       440 DEBUG    Finished Request
+connectionpool.py          813 DEBUG    Starting new HTTPS connection (1): www.phptravels.net:443
+connectionpool.py          393 DEBUG    https://www.phptravels.net:443 "GET /account HTTP/1.1" 200 16950
+test_login.py              254 DEBUG    _requested_status_code 200
+remote_connection.py       388 DEBUG    GET http://127.0.0.1:54331/session/45d9b607-de0a-e141-8215-91c68351c4b2/url {}
+connectionpool.py          393 DEBUG    http://127.0.0.1:54331 "GET /session/45d9b607-de0a-e141-8215-91c68351c4b2/url HTTP/1.1" 200 41
+remote_connection.py       440 DEBUG    Finished Request</div></td></tr></tbody></table></body></html>

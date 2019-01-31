@@ -1,14 +1,13 @@
 """
 This module contains shared fixtures, steps, and hooks.
 """
+import pytest
 import logging
 import logging.config
 import os.path
 import sys
 import time
 from logging import Logger
-
-import pytest
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 
@@ -84,6 +83,15 @@ def report_logger():
     # logger.info('logger type {}'.format(type(logger)))
     return logger
 
+@pytest.hookimpl
+def pytest_bdd_apply_tag(tag, function):
+    if tag == 'todo':
+        marker = pytest.mark.skip(reason="Not implemented yet")
+        marker(function)
+        return True
+    else:
+        # Fall back to pytest-bdd's default behavior
+        return None
 
 @pytest.hookimpl
 def pytest_bdd_before_step(request, feature, scenario, step, step_func):
@@ -118,7 +126,7 @@ def pytest_runtest_makereport(item, call):
     setattr(item, "REPORT_" + rep.when, rep)
     # we only look at actual test calls, not setup/teardown
     if rep.when == "call":
-        mode = "a" if os.path.exists("failures") else "w"
+        mode = "a" if os.path.exists("runs.txt") else "w"
         with open("runs.txt", mode) as f:
             # let's also access a fixture for the fun of it
 

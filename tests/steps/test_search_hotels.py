@@ -16,7 +16,7 @@ scenarios('../features/search_hotels.feature')
 url_path = ""
 
 
-@given(parsers.parse('I am an authenticated user in the {hotels_page}'))
+@given(parsers.parse('The user is in the {hotels_page}'))
 def search(browser, hotels_page):
     """
     @scenario('login.feature')
